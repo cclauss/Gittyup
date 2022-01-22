@@ -211,7 +211,7 @@ jobs:
         continue-on-error: true
         run: |
           cd build/release
-          ninja check
+          QT_QPA_PLATFORM=offscreen ninja check
 
   prerelease:
     # https://github.com/marvinpinto/actions/issues/177
