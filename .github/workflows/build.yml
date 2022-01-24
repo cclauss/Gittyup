@@ -210,6 +210,7 @@ jobs:
         if: matrix.env.ninja_platform != 'win'
         continue-on-error: true
         run: |
+          sudo apt update -q
           sudo apt install -y -q libxcb-icccm4
           sudo apt install -y -q libxcb-image0
           sudo apt install -y -q libxcb-util1
