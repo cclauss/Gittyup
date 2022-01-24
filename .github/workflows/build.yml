@@ -211,6 +211,7 @@ jobs:
         continue-on-error: true
         run: |
           sudo apt update -q
+          sudo apt install -y -q build-essential libgl1-mesa-dev
           sudo apt install -y -q libxcb-icccm4
           sudo apt install -y -q libxcb-image0
           sudo apt install -y -q libxcb-util1
