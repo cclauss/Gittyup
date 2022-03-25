@@ -73,7 +73,7 @@ jobs:
       matrix:
         env:
           - name: linux
-            os: ubuntu-latest
+            os: ubuntu-18.04
             ninja_platform: linux
             qt_platform: linux
             openssl_arch: linux-x86_64
@@ -205,22 +205,32 @@ jobs:
           path: build/release/pack/Gittyup-*
           name: Gittyup ${{ matrix.env.name }}
 
-      - name: Test
-        # TODO: Re-Enable this when https://github.com/actions/runner/issues/1206 gets resolved
-        if: matrix.env.ninja_platform != 'win'
-        continue-on-error: false
+      - name: Prepare test
+        if: matrix.env.ninja_platform == 'linux'
         run: |
           sudo apt update -q
-          sudo apt install -y -q build-essential libgl1-mesa-dev
-          sudo apt install -y -q libxcb-icccm4
-          sudo apt install -y -q libxcb-image0
-          sudo apt install -y -q libxcb-util1
-          sudo apt install -y -q libxcb-keysyms1
-          sudo apt install -y -q libxcb-randr0
-          sudo apt install -y -q libxcb-render-util0
-          sudo apt install -y -q libxcb-xinerama0
-          echo "ldd $Qt5_DIR/plugins/platforms/libqxcb.so"
-          ldd $Qt5_DIR/plugins/platforms/libqxcb.so
+          sudo apt install -y -q build-essential libgl1-mesa-dev \
+            libxcb-icccm4 \
+            libxcb-image0 \
+            libxcb-util1 \
+            libxcb-keysyms1 \
+            libxcb-randr0 \
+            libxcb-render-util0 \
+            libxcb-xinerama0 \
+            icewm xvfb
+
+      - name: Test
+        if: matrix.env.ninja_platform == 'linux'
+        uses: GabrielBB/xvfb-action@v1
+        with:
+          working-directory: build/release
+          run: ../../test/linux-runner.sh
+
+      - name: Test
+        # TODO: Re-Enable this for Windows when https://github.com/actions/runner/issues/1206 gets resolved
+        if: matrix.env.ninja_platform != 'win' && matrix.env.ninja_platform != 'linux'
+        continue-on-error: false
+        run: |
           cd build/release
           ninja check
 

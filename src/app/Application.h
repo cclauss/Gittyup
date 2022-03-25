@@ -29,6 +29,9 @@ public:
   bool restoreWindows();
   bool runSingleInstance();
 
+  static bool isInTest();
+  static void setInTest();
+
   static Theme *theme();
 
 protected:
@@ -41,6 +44,8 @@ private:
   QString mPathspec = QString();
   QScopedPointer<Theme> mTheme;
   QStringList mPositionalArguments;
+
+  static bool mIsInTest;
 };
 
 #ifdef Q_OS_LINUX
