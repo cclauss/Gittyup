@@ -3,6 +3,7 @@
 icewm&
 sleep 2
 
+XDISPLAY=":1"
 if [[ -n ${XDISPLAY-} ]]; then
   if [[ "$OSTYPE" != "darwin"* ]]; then
     # 'coproc' so that SIGINT will still work (https://unix.stackexchange.com/a/478697/11592)
