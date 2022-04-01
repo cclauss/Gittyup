@@ -1,6 +1,7 @@
 #include "Test.h"
 #include "dialogs/ExternalToolsDialog.h"
 
+#define private public
 #include "ui/DiffView/HunkWidget.h"
 #include "ui/DiffView/FileWidget.h"
 
