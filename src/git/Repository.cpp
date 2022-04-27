@@ -166,8 +166,9 @@ Id Repository::workdirId(const QString &path) const {
   return id;
 }
 
-QString Repository::message() const {
-  git_buf buf = GIT_BUF_INIT_CONST(nullptr, 0);
+QString Repository::message() const
+{
+  git_buf buf = GIT_BUF_INIT;
   git_repository_message(&buf, d->repo);
   return QString::fromUtf8(buf.ptr, buf.size);
 }
