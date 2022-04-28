@@ -80,16 +80,8 @@ Id Submodule::indexId() const { return git_submodule_index_id(d.data()); }
 
 Id Submodule::workdirId() const { return git_submodule_wd_id(d.data()); }
 
-int Submodule::status() const {
-  unsigned int status = 0;
-  if (git_submodule_status(&status, d.data()->repo, GIT_SUBMODULE_IGNORE_UNSPECIFIED))
-    return -1;
-
-  return status;
-}
-
-Result Submodule::update(Remote::Callbacks *callbacks, bool init,
-                         bool checkout_force) {
+Result Submodule::update(Remote::Callbacks *callbacks, bool init, bool checkout_force)
+{
   git_submodule_update_options opts = GIT_SUBMODULE_UPDATE_OPTIONS_INIT;
   opts.fetch_opts.callbacks.connect = &Remote::Callbacks::connect;
   opts.fetch_opts.callbacks.disconnect = &Remote::Callbacks::disconnect;

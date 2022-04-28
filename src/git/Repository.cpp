@@ -653,7 +653,18 @@ Submodule Repository::lookupSubmodule(const QString &name) const {
   return Submodule(submodule);
 }
 
-Remote Repository::addRemote(const QString &name, const QString &url) {
+int Repository::submoduleStatus(const QString& name) const {
+
+	unsigned int status;
+	// TODO: testing!!!!
+	int returnValue = git_submodule_status(&status, d->repo, name.toLocal8Bit().data(), GIT_SUBMODULE_IGNORE_UNSPECIFIED);
+	if (returnValue < 0)
+		return returnValue;
+	return status;
+}
+
+Remote Repository::addRemote(const QString &name, const QString &url)
+{
   // FIXME: Validate name?
 
   emit d->notifier->remoteAboutToBeAdded(name);
