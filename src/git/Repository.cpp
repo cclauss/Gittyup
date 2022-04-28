@@ -310,8 +310,7 @@ Diff Repository::diffIndexToWorkdir(const Index &index,
                                     Diff::Callbacks *callbacks,
                                     bool ignoreWhitespace) const {
   git_diff_options opts = GIT_DIFF_OPTIONS_INIT;
-  opts.flags |= (GIT_DIFF_INCLUDE_UNTRACKED | GIT_DIFF_RECURSE_UNTRACKED_DIRS |
-                 GIT_DIFF_DISABLE_MMAP | GIT_DIFF_INCLUDE_TYPECHANGE);
+  opts.flags |= (GIT_DIFF_INCLUDE_UNTRACKED | GIT_DIFF_RECURSE_UNTRACKED_DIRS | GIT_DIFF_INCLUDE_TYPECHANGE); // GIT_DIFF_DISABLE_MMAP flag really needed?
   if (ignoreWhitespace)
     opts.flags |= GIT_DIFF_IGNORE_WHITESPACE;
 
