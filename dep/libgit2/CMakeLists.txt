@@ -32,6 +32,4 @@ if(WIN32)
       CACHE BOOL "" FORCE)
 endif()
 
-
 add_subdirectory(libgit2)
-target_compile_definitions(libgit2 PRIVATE GIT_DEPRECATE_HARD)
