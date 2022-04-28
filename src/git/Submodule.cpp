@@ -90,7 +90,7 @@ Result Submodule::update(Remote::Callbacks *callbacks, bool init, bool checkout_
   opts.fetch_opts.callbacks.certificate_check = &Remote::Callbacks::certificate;
   opts.fetch_opts.callbacks.transfer_progress = &Remote::Callbacks::transfer;
   opts.fetch_opts.callbacks.update_tips = &Remote::Callbacks::update;
-  opts.fetch_opts.callbacks.resolve_url = &Remote::Callbacks::url;
+  opts.fetch_opts.callbacks.remote_ready = &Remote::Callbacks::remoteReady;
   opts.fetch_opts.callbacks.payload = callbacks;
 
   if (checkout_force)

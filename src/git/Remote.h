@@ -110,7 +110,9 @@ public:
     static int update(const char *name, const git_oid *a, const git_oid *b,
                       void *payload);
 
-    static int url(git_buf *out, const char *url, int direction, void *payload);
+	static int remoteReady(git_remote *remote,
+						   int direction,
+						   void *payload);
 
   protected:
     // Try to stop the current remote.
