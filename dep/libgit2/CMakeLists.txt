@@ -33,3 +33,5 @@ if(WIN32)
 endif()
 
 add_subdirectory(libgit2)
+# otherwise the zlib is not available in the src/git
+set(LIBGIT2_DEPENDENCY_OBJECTS ${LIBGIT2_DEPENDENCY_OBJECTS} PARENT_SCOPE)

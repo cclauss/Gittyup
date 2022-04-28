@@ -3,6 +3,8 @@ find_package(PkgConfig)
 add_subdirectory(openssl)
 add_subdirectory(libssh2)
 add_subdirectory(libgit2)
+# otherwise the zlib is not available in the src/git
+set(LIBGIT2_DEPENDENCY_OBJECTS ${LIBGIT2_DEPENDENCY_OBJECTS} PARENT_SCOPE)
 
 add_subdirectory(cmark)
 add_subdirectory(lua)

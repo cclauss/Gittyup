@@ -29,6 +29,7 @@ add_library(
 
 target_link_libraries(git
   libgit2
+  ${LIBGIT2_DEPENDENCY_OBJECTS}
   Qt5::Core
   Qt5::Network
 )
