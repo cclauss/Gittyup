@@ -62,7 +62,6 @@ target_link_libraries(app
   git
   ui
   update
-  libgit2
   Qt5::Widgets
 )
 
