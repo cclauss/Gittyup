@@ -187,7 +187,7 @@ void refresh(RepoView *view, bool expectDirty)
   bool finished = false;
   auto connection = QObject::connect(view, &RepoView::statusChanged,
                                      [&finished, expectDirty](bool dirty) {
-                                       QCOMPARE(expectDirty, dirty);
+									   QCOMPARE(dirty, expectDirty);
                                        finished = true;
                                      });
 

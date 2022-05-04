@@ -281,13 +281,19 @@ Diff Repository::status(const Index &index, Diff::Callbacks *callbacks,
       tree = commit.tree();
   }
 
+  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::status() 1";
+
   Diff diff = diffTreeToIndex(tree, index, ignoreWhitespace);
+  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::status() 1";
   Diff workdir = diffIndexToWorkdir(index, callbacks, ignoreWhitespace);
+  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::status() 1";
   if (!diff.isValid() || !workdir.isValid())
     return Diff();
 
   diff.merge(workdir);
+  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::status() 1";
   diff.setIndex(index);
+  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::status() 1";
 
   return diff.count() ? diff : Diff();
 }

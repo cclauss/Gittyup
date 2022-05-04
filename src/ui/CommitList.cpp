@@ -107,6 +107,7 @@ public:
   git::Reference reference() const { return mRef; }
 
   git::Diff status() const {
+	qDebug() << __FILE__ << ":" << __LINE__ << " CommitList::status()";
     if (!mStatus.isFinished())
       return git::Diff();
 
@@ -118,6 +119,7 @@ public:
   }
 
   void startStatus() {
+	  qDebug() << __FILE__ << ":" << __LINE__ << " CommitList::startStatus()";
     // Cancel existing status diff.
     cancelStatus();
 
@@ -129,6 +131,7 @@ public:
     mProgress = 0;
     mTimer.start(50);
     mStatus.setFuture(QtConcurrent::run([this] {
+		qDebug() << __FILE__ << ":" << __LINE__ << " mStatus::runFuture()";
       // Pass the repo's index to suppress reload.
       bool ignoreWhitespace = Settings::instance()->isWhitespaceIgnored();
       return mRepo.status(mRepo.index(), &mStatusCallbacks, ignoreWhitespace);
