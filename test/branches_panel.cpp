@@ -44,8 +44,10 @@ void TestBranchesPanel::initTestCase() {
   mWindow = new MainWindow(mRepo);
   RepoView *view = mWindow->currentView();
 
+  QString repoPath = Test::extractRepository("gitahead-test.zip", false);
+
   git::Remote remote =
-      mRepo->addRemote("origin", "git@github.com:stinb/gitahead-test.git");
+	  mRepo->addRemote("origin", repoPath);
   fetch(view, remote);
 
   git::Branch upstream =
