@@ -39,7 +39,7 @@ enable_testing()
 # Add test library.
 add_subdirectory(dep/zip)
 add_library(testlib Test.cpp)
-target_link_libraries(testlib app git ui Qt5::Test zip)
+target_link_libraries(testlib app git ui indexer Qt5::Test zip)
 target_include_directories(testlib PRIVATE ${CMAKE_SOURCE_DIR}/src)
 target_compile_definitions(
   testlib PRIVATE TESTREPOSITORIES_PATH="${CMAKE_CURRENT_SOURCE_DIR}/testRepos")
