@@ -70,8 +70,10 @@ void TestMerge::firstCommit() {
 
   // Click on the check box.
   QModelIndex index = model->index(0, 0);
-  mouseClick(files->viewport(), Qt::LeftButton, Qt::KeyboardModifiers(),
-             files->checkRect(index).center());
+  // does not work in the CI
+//  mouseClick(files->viewport(), Qt::LeftButton, Qt::KeyboardModifiers(),
+//			 files->checkRect(index).center());
+  model->setData(index, Qt::CheckState::Checked, Qt::CheckStateRole);
 
   // Commit and refresh.
   QTextEdit *editor = view->findChild<QTextEdit *>("MessageEditor");
