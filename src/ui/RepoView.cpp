@@ -1848,6 +1848,8 @@ void RepoView::amendCommit() {
   if (!commit.isValid())
     return;
 
+  qDebug() << __FILE__ << ":" << __LINE__ << " RepoView::amendCommit 1";
+
   QList<git::Commit> parents = commit.parents();
   switch (parents.size()) {
     case 0:
@@ -1855,11 +1857,13 @@ void RepoView::amendCommit() {
       // FIXME: Prompt to reset?
       head.remove(true);
       mDetails->setCommitMessage(commit.message());
+	  qDebug() << __FILE__ << ":" << __LINE__ << " RepoView::amendCommit 2";
       refresh();
       break;
 
     case 1:
       // Reset to parent commit.
+	  qDebug() << __FILE__ << ":" << __LINE__ << " RepoView::amendCommit 3";
       promptToReset(parents.first(), GIT_RESET_SOFT, commit);
       break;
 

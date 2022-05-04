@@ -91,6 +91,7 @@ public:
     connect(&mStatus, &QFutureWatcher<git::Diff>::finished, [this] {
       mTimer.stop();
       resetWalker();
+	  qDebug() << __FILE__ << ":" << __LINE__ << " mStatus::finished";
       emit statusFinished(!mRows.isEmpty() && !mRows.first().commit.isValid());
     });
 
@@ -1096,15 +1097,19 @@ CommitList::CommitList(Index *index, QWidget *parent)
 
   CommitModel *model = static_cast<CommitModel *>(mModel);
   connect(model, &CommitModel::statusFinished, [this](bool visible) {
-    // Fake a selection notification if the diff is visible and selected.
+	qDebug() << __FILE__ << ":" << __LINE__ << " CommitModel::statusFinished 1";
+	  // Fake a selection notification if the diff is visible and selected.
     if (visible && selectionModel()->isSelected(mModel->index(0, 0)))
       resetSelection();
+
+	qDebug() << __FILE__ << ":" << __LINE__ << " CommitModel::statusFinished 2";
 
     // Select the first commit if the selection was cleared.
     if (selectedIndexes().isEmpty())
       selectFirstCommit();
 
     // Notify main window.
+	qDebug() << __FILE__ << ":" << __LINE__ << " CommitModel::statusFinished 3";
     emit statusChanged(visible);
   });
 
