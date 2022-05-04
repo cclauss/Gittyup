@@ -111,10 +111,15 @@ public:
     if (!mStatus.isFinished())
       return git::Diff();
 
-    QFuture<git::Diff> future = mStatus.future();
-    if (!future.resultCount())
-      return git::Diff();
+	qDebug() << __FILE__ << ":" << __LINE__ << " mStatus finished()";
 
+    QFuture<git::Diff> future = mStatus.future();
+	if (!future.resultCount()) {
+		qDebug() << __FILE__ << ":" << __LINE__ << " mStatus finished(): return invalid diff";
+      return git::Diff();
+	}
+
+	qDebug() << __FILE__ << ":" << __LINE__ << " mStatus finished(): return valid diff";
     return future.result();
   }
 

@@ -137,7 +137,10 @@ void TestInitRepo::amendCommit() {
   QVERIFY(view);
 
   bool finished = false;
-  connect(view, &RepoView::statusChanged, [&finished]() { finished = true; });
+  connect(view, &RepoView::statusChanged, [&finished]() {
+	  qDebug() << __FILE__ << ":" << __LINE__ << " init_repo: statusChanged, finished";
+	  finished = true;
+  });
 
   view->amendCommit();
 

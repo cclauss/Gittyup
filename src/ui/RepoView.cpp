@@ -1840,6 +1840,7 @@ bool RepoView::commit(const QString &message,
 
 void RepoView::amendCommit() {
   // FIXME: Log errors.
+  qDebug() << __FILE__ << ":" << __LINE__ << " RepoView::amendCommit 0";
   git::Branch head = mRepo.head();
   if (!head.isValid())
     return;
