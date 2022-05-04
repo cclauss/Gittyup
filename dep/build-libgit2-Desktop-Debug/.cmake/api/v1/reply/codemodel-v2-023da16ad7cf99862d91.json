@@ -1,0 +1,345 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "libgit2",
+					"childIndexes" : 
+					[
+						2,
+						9
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libgit2-Debug-606eafdb7ee9a01ab693.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "libgit2"
+				},
+				{
+					"build" : "libgit2/src",
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libgit2.src-Debug-96b878e3482238db8bf2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "libgit2/src"
+				},
+				{
+					"build" : "libgit2/deps/http-parser",
+					"jsonFile" : "directory-libgit2.deps.http-parser-Debug-db22b3bee559b23b64c1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "libgit2/deps/http-parser",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "libgit2/deps/zlib",
+					"jsonFile" : "directory-libgit2.deps.zlib-Debug-48cde1de154ab4951749.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "libgit2/deps/zlib",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "libgit2/deps/ntlmclient",
+					"jsonFile" : "directory-libgit2.deps.ntlmclient-Debug-39c7074cd75c93624384.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "libgit2/deps/ntlmclient",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "libgit2/src/libgit2",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libgit2.src.libgit2-Debug-094e7bfda1041a7ed233.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "libgit2/src/libgit2",
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				},
+				{
+					"build" : "libgit2/src/util",
+					"jsonFile" : "directory-libgit2.src.util-Debug-b25d74a58f58a9fc1cca.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "libgit2/src/util",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "libgit2/src/cli",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libgit2.src.cli-Debug-eaed886db1a2884b7ea5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "libgit2/src/cli",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "libgit2/tests",
+					"childIndexes" : 
+					[
+						10,
+						11,
+						12
+					],
+					"jsonFile" : "directory-libgit2.tests-Debug-6ed77a9e12265ab18078.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "libgit2/tests"
+				},
+				{
+					"build" : "libgit2/tests/headertest",
+					"jsonFile" : "directory-libgit2.tests.headertest-Debug-ce403961d0dacafe245e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 9,
+					"projectIndex" : 1,
+					"source" : "libgit2/tests/headertest",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "libgit2/tests/libgit2",
+					"jsonFile" : "directory-libgit2.tests.libgit2-Debug-ccee7c382dbb769d4686.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 9,
+					"projectIndex" : 1,
+					"source" : "libgit2/tests/libgit2",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "libgit2/tests/util",
+					"jsonFile" : "directory-libgit2.tests.util-Debug-42efa2c1dfecde255b60.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 9,
+					"projectIndex" : 1,
+					"source" : "libgit2/tests/util",
+					"targetIndexes" : 
+					[
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Project"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					],
+					"name" : "libgit2",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 8,
+					"id" : "git2_cli::@4f48581f29094fee2747",
+					"jsonFile" : "target-git2_cli-Debug-1a69d4e2a5ef3a6e0b4b.json",
+					"name" : "git2_cli",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "headertest::@fa176d15ae80524b260e",
+					"jsonFile" : "target-headertest-Debug-47634e61f698a1e8d9ed.json",
+					"name" : "headertest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "http-parser::@67434b243eb72c8ad23b",
+					"jsonFile" : "target-http-parser-Debug-cacd2ab72648783a00fa.json",
+					"name" : "http-parser",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "libgit2::@dba1225dd22255d1426f",
+					"jsonFile" : "target-libgit2-Debug-76d0fccd33e174d936e2.json",
+					"name" : "libgit2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "libgit2_tests::@a465d425b2648a25ff0a",
+					"jsonFile" : "target-libgit2_tests-Debug-674af8da2a9512f2f0a1.json",
+					"name" : "libgit2_tests",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "libgit2package::@dba1225dd22255d1426f",
+					"jsonFile" : "target-libgit2package-Debug-1a4dd52e08ff62540495.json",
+					"name" : "libgit2package",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ntlmclient::@03d5f268ecf1eccac0e2",
+					"jsonFile" : "target-ntlmclient-Debug-194f5feef0eea66e6d89.json",
+					"name" : "ntlmclient",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "util::@0d2c5bbb220ebdff66a4",
+					"jsonFile" : "target-util-Debug-0dc60b17eac33e690c7a.json",
+					"name" : "util",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "util_tests::@56511f2c082e02054336",
+					"jsonFile" : "target-util_tests-Debug-a627e54e4d17dfe574fb.json",
+					"name" : "util_tests",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "zlib::@d746e9c1079018048906",
+					"jsonFile" : "target-zlib-Debug-8d8266119faf6b61323a.json",
+					"name" : "zlib",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug",
+		"source" : "/home/martin/GITProjekte/Gittyup/dep/libgit2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

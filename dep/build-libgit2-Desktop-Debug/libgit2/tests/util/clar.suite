@@ -1,0 +1,930 @@
+extern void test_array__bsearch2(void);
+extern void test_assert__argument(void);
+extern void test_assert__argument_with_non_int_return_type(void);
+extern void test_assert__argument_with_void_return_type(void);
+extern void test_assert__internal(void);
+extern void test_assert__with_cleanup(void);
+extern void test_bitvec__0(void);
+extern void test_copy__file(void);
+extern void test_copy__file_in_dir(void);
+extern void test_copy__tree(void);
+extern void test_dirent__dont_traverse_dot(void);
+extern void test_dirent__traverse_subfolder(void);
+extern void test_dirent__traverse_slash_terminated_folder(void);
+extern void test_dirent__dont_traverse_empty_folders(void);
+extern void test_dirent__traverse_weird_filenames(void);
+extern void test_dirent__length_limits(void);
+extern void test_dirent__empty_dir(void);
+extern void test_dirent__diriter_with_fullname(void);
+extern void test_dirent__diriter_at_directory_root(void);
+extern void test_encoding__decode(void);
+extern void test_encoding__encode(void);
+extern void test_errors__public_api(void);
+extern void test_errors__new_school(void);
+extern void test_errors__restore(void);
+extern void test_errors__free_state(void);
+extern void test_errors__restore_oom(void);
+extern void test_errors__integer_overflow_alloc_multiply(void);
+extern void test_errors__integer_overflow_alloc_add(void);
+extern void test_errors__integer_overflow_sets_oom(void);
+extern void test_filebuf__0(void);
+extern void test_filebuf__1(void);
+extern void test_filebuf__2(void);
+extern void test_filebuf__4(void);
+extern void test_filebuf__5(void);
+extern void test_filebuf__umask(void);
+extern void test_filebuf__rename_error(void);
+extern void test_filebuf__symlink_follow(void);
+extern void test_filebuf__symlink_follow_absolute_paths(void);
+extern void test_filebuf__symlink_depth(void);
+extern void test_filebuf__hidden_file(void);
+extern void test_filebuf__detects_directory(void);
+extern void test_ftruncate__2gb(void);
+extern void test_ftruncate__4gb(void);
+extern void test_ftruncate__initialize(void);
+extern void test_ftruncate__cleanup(void);
+extern void test_futils__writebuffer(void);
+extern void test_futils__write_hidden_file(void);
+extern void test_futils__recursive_rmdir_keeps_symlink_targets(void);
+extern void test_futils__mktmp_umask(void);
+extern void test_futils__initialize(void);
+extern void test_futils__cleanup(void);
+extern void test_gitstr__0(void);
+extern void test_gitstr__1(void);
+extern void test_gitstr__2(void);
+extern void test_gitstr__3(void);
+extern void test_gitstr__4(void);
+extern void test_gitstr__5(void);
+extern void test_gitstr__6(void);
+extern void test_gitstr__7(void);
+extern void test_gitstr__8(void);
+extern void test_gitstr__9(void);
+extern void test_gitstr__10(void);
+extern void test_gitstr__join3(void);
+extern void test_gitstr__11(void);
+extern void test_gitstr__rfind_variants(void);
+extern void test_gitstr__puts_escaped(void);
+extern void test_gitstr__unescape(void);
+extern void test_gitstr__encode_base64(void);
+extern void test_gitstr__decode_base64(void);
+extern void test_gitstr__encode_base85(void);
+extern void test_gitstr__decode_base85(void);
+extern void test_gitstr__decode_base85_fails_gracefully(void);
+extern void test_gitstr__classify_with_utf8(void);
+extern void test_gitstr__lf_and_crlf_conversions(void);
+extern void test_gitstr__dont_grow_borrowed(void);
+extern void test_gitstr__dont_hit_infinite_loop_when_resizing(void);
+extern void test_gitstr__avoid_printing_into_oom_buffer(void);
+extern void test_hex__fromhex(void);
+extern void test_iconv__unchanged(void);
+extern void test_iconv__decomposed_to_precomposed(void);
+extern void test_iconv__precomposed_is_unmodified(void);
+extern void test_iconv__initialize(void);
+extern void test_iconv__cleanup(void);
+extern void test_init__returns_count(void);
+extern void test_init__reinit_succeeds(void);
+extern void test_init__concurrent_init_succeeds(void);
+extern void test_integer__multiply_int64_no_overflow(void);
+extern void test_integer__multiply_int64_overflow(void);
+extern void test_integer__multiply_int64_edge_cases(void);
+extern void test_link__stat_regular_file(void);
+extern void test_link__lstat_regular_file(void);
+extern void test_link__stat_symlink(void);
+extern void test_link__stat_symlink_directory(void);
+extern void test_link__stat_symlink_chain(void);
+extern void test_link__stat_dangling_symlink(void);
+extern void test_link__stat_dangling_symlink_directory(void);
+extern void test_link__lstat_symlink(void);
+extern void test_link__lstat_symlink_directory(void);
+extern void test_link__lstat_dangling_symlink(void);
+extern void test_link__lstat_dangling_symlink_directory(void);
+extern void test_link__stat_junction(void);
+extern void test_link__stat_dangling_junction(void);
+extern void test_link__lstat_junction(void);
+extern void test_link__lstat_dangling_junction(void);
+extern void test_link__stat_hardlink(void);
+extern void test_link__lstat_hardlink(void);
+extern void test_link__stat_reparse_point(void);
+extern void test_link__lstat_reparse_point(void);
+extern void test_link__readlink_nonexistent_file(void);
+extern void test_link__readlink_normal_file(void);
+extern void test_link__readlink_symlink(void);
+extern void test_link__readlink_dangling(void);
+extern void test_link__readlink_multiple(void);
+extern void test_link__cleanup(void);
+extern void test_memmem__found(void);
+extern void test_memmem__absent(void);
+extern void test_memmem__edgecases(void);
+extern void test_mkdir__absolute(void);
+extern void test_mkdir__basic(void);
+extern void test_mkdir__with_base(void);
+extern void test_mkdir__chmods(void);
+extern void test_mkdir__keeps_parent_symlinks(void);
+extern void test_mkdir__mkdir_path_inside_unwriteable_parent(void);
+extern void test_path__00_dirname(void);
+extern void test_path__01_basename(void);
+extern void test_path__05_joins(void);
+extern void test_path__06_long_joins(void);
+extern void test_path__07_path_to_dir(void);
+extern void test_path__08_self_join(void);
+extern void test_path__09_percent_decode(void);
+extern void test_path__10_fromurl(void);
+extern void test_path__11_walkup(void);
+extern void test_path__11a_walkup_cancel(void);
+extern void test_path__12_offset_to_path_root(void);
+extern void test_path__13_cannot_prettify_a_non_existing_file(void);
+extern void test_path__14_apply_relative(void);
+extern void test_path__15_resolve_relative(void);
+extern void test_path__16_resolve_relative(void);
+extern void test_path__find_exe_in_path(void);
+extern void test_path__validate_current_user_ownership(void);
+extern void test_path__initialize(void);
+extern void test_path__cleanup(void);
+extern void test_path_core__make_relative(void);
+extern void test_path_core__isvalid_standard(void);
+extern void test_path_core__isvalid_standard_str(void);
+extern void test_path_core__isvalid_empty_dir_component(void);
+extern void test_path_core__isvalid_dot_and_dotdot(void);
+extern void test_path_core__isvalid_backslash(void);
+extern void test_path_core__isvalid_trailing_dot(void);
+extern void test_path_core__isvalid_trailing_space(void);
+extern void test_path_core__isvalid_trailing_colon(void);
+extern void test_path_core__isvalid_dos_paths(void);
+extern void test_path_core__isvalid_dos_paths_withnum(void);
+extern void test_path_core__isvalid_nt_chars(void);
+extern void test_path_core__join_unrooted(void);
+extern void test_path_core__join_unrooted_respects_funny_windows_roots(void);
+extern void test_path_win32__utf8_to_utf16(void);
+extern void test_path_win32__removes_trailing_slash(void);
+extern void test_path_win32__squashes_multiple_slashes(void);
+extern void test_path_win32__unc(void);
+extern void test_path_win32__honors_max_path(void);
+extern void test_path_win32__dot_and_dotdot(void);
+extern void test_path_win32__absolute_from_no_drive_letter(void);
+extern void test_path_win32__absolute_from_relative(void);
+extern void test_path_win32__keeps_relative(void);
+extern void test_path_win32__remove_namespace(void);
+extern void test_path_win32__canonicalize(void);
+extern void test_path_win32__8dot3_name(void);
+extern void test_pool__0(void);
+extern void test_pool__1(void);
+extern void test_pool__strndup_limit(void);
+extern void test_posix__inet_pton(void);
+extern void test_posix__utimes(void);
+extern void test_posix__unlink_removes_symlink(void);
+extern void test_posix__symlink_resolves_to_correct_type(void);
+extern void test_posix__relative_symlink(void);
+extern void test_posix__symlink_to_file_across_dirs(void);
+extern void test_posix__initialize(void);
+extern void test_pqueue__items_are_put_in_order(void);
+extern void test_pqueue__interleave_inserts_and_pops(void);
+extern void test_pqueue__max_heap_size(void);
+extern void test_pqueue__max_heap_size_without_comparison(void);
+extern void test_pqueue__interleaved_pushes_and_pops(void);
+extern void test_qsort__array_with_single_entry(void);
+extern void test_qsort__array_with_equal_entries(void);
+extern void test_qsort__sorted_array(void);
+extern void test_qsort__unsorted_array(void);
+extern void test_qsort__sorting_strings(void);
+extern void test_qsort__sorting_big_entries(void);
+extern void test_regexp__compile_ignores_global_locale_ctype(void);
+extern void test_regexp__compile_ignores_global_locale_collate(void);
+extern void test_regexp__regex_matches_digits_with_locale(void);
+extern void test_regexp__regex_matches_alphabet_with_locale(void);
+extern void test_regexp__simple_search_matches(void);
+extern void test_regexp__case_insensitive_search_matches(void);
+extern void test_regexp__nonmatching_search_returns_error(void);
+extern void test_regexp__search_finds_complete_match(void);
+extern void test_regexp__search_finds_correct_offsets(void);
+extern void test_regexp__search_finds_empty_group(void);
+extern void test_regexp__search_fills_matches_with_first_matching_groups(void);
+extern void test_regexp__search_skips_nonmatching_group(void);
+extern void test_regexp__search_initializes_trailing_nonmatching_groups(void);
+extern void test_regexp__initialize(void);
+extern void test_regexp__cleanup(void);
+extern void test_rmdir__delete_recursive(void);
+extern void test_rmdir__fail_to_delete_non_empty_dir(void);
+extern void test_rmdir__keep_base(void);
+extern void test_rmdir__can_skip_non_empty_dir(void);
+extern void test_rmdir__can_remove_empty_parents(void);
+extern void test_rmdir__initialize(void);
+extern void test_rmdir__cleanup(void);
+extern void test_sha1__sum(void);
+extern void test_sha1__detect_collision_attack(void);
+extern void test_sha1__win32_providers(void);
+extern void test_sha1__initialize(void);
+extern void test_sha1__cleanup(void);
+extern void test_sha256__empty(void);
+extern void test_sha256__hello(void);
+extern void test_sha256__pdf(void);
+extern void test_sha256__win32_providers(void);
+extern void test_sha256__initialize(void);
+extern void test_sha256__cleanup(void);
+extern void test_sortedcache__name_only(void);
+extern void test_sortedcache__in_memory(void);
+extern void test_sortedcache__on_disk(void);
+extern void test_stat__0(void);
+extern void test_stat__root(void);
+extern void test_stat__initialize(void);
+extern void test_stat__cleanup(void);
+extern void test_str_basic__resize(void);
+extern void test_str_basic__resize_incremental(void);
+extern void test_str_basic__printf(void);
+extern void test_str_oom__grow(void);
+extern void test_str_oom__grow_by(void);
+extern void test_str_oom__initialize(void);
+extern void test_str_oom__cleanup(void);
+extern void test_str_percent__decode_succeeds(void);
+extern void test_str_percent__ignores_invalid(void);
+extern void test_str_quote__quote_succeeds(void);
+extern void test_str_quote__unquote_succeeds(void);
+extern void test_str_quote__unquote_fails(void);
+extern void test_str_splice__preprend(void);
+extern void test_str_splice__append(void);
+extern void test_str_splice__insert_at(void);
+extern void test_str_splice__remove_at(void);
+extern void test_str_splice__replace(void);
+extern void test_str_splice__replace_with_longer(void);
+extern void test_str_splice__replace_with_shorter(void);
+extern void test_str_splice__truncate(void);
+extern void test_str_splice__dont_do_anything(void);
+extern void test_str_splice__initialize(void);
+extern void test_str_splice__cleanup(void);
+extern void test_string__0(void);
+extern void test_string__1(void);
+extern void test_string__2(void);
+extern void test_string__prefixncmp(void);
+extern void test_string__prefixncmp_icase(void);
+extern void test_string__strcmp(void);
+extern void test_string__strcasecmp(void);
+extern void test_string__strlcmp(void);
+extern void test_strmap__0(void);
+extern void test_strmap__inserted_strings_can_be_retrieved(void);
+extern void test_strmap__deleted_entry_cannot_be_retrieved(void);
+extern void test_strmap__inserting_many_keys_succeeds(void);
+extern void test_strmap__get_succeeds_with_existing_entries(void);
+extern void test_strmap__get_returns_null_on_nonexisting_key(void);
+extern void test_strmap__set_persists_key(void);
+extern void test_strmap__set_persists_multpile_keys(void);
+extern void test_strmap__set_updates_existing_key(void);
+extern void test_strmap__iteration(void);
+extern void test_strmap__iterating_empty_map_stops_immediately(void);
+extern void test_strmap__initialize(void);
+extern void test_strmap__cleanup(void);
+extern void test_strtol__int32(void);
+extern void test_strtol__int64(void);
+extern void test_strtol__base_autodetection(void);
+extern void test_strtol__buffer_length_with_autodetection_truncates(void);
+extern void test_strtol__buffer_length_truncates(void);
+extern void test_strtol__buffer_length_with_leading_ws_truncates(void);
+extern void test_strtol__buffer_length_with_leading_sign_truncates(void);
+extern void test_strtol__error_message_cuts_off(void);
+extern void test_utf8__char_length(void);
+extern void test_vector__0(void);
+extern void test_vector__1(void);
+extern void test_vector__2(void);
+extern void test_vector__3(void);
+extern void test_vector__4(void);
+extern void test_vector__5(void);
+extern void test_vector__remove_matching(void);
+extern void test_vector__grow_and_shrink(void);
+extern void test_vector__reverse(void);
+extern void test_vector__dup_empty_vector(void);
+extern void test_wildmatch__basic_wildmatch(void);
+extern void test_wildmatch__slash_matching_features(void);
+extern void test_wildmatch__various_additional(void);
+extern void test_wildmatch__character_classes(void);
+extern void test_wildmatch__additional_with_malformed(void);
+extern void test_wildmatch__recursion(void);
+extern void test_wildmatch__pathmatch(void);
+extern void test_wildmatch__case_sensitivity(void);
+extern void test_zstream__basic(void);
+extern void test_zstream__fails_on_trailing_garbage(void);
+extern void test_zstream__buffer(void);
+extern void test_zstream__big_data(void);
+static const struct clar_func _clar_cb_array[] = {
+    { "bsearch2", &test_array__bsearch2 }
+};
+static const struct clar_func _clar_cb_assert[] = {
+    { "argument", &test_assert__argument },
+    { "argument_with_non_int_return_type", &test_assert__argument_with_non_int_return_type },
+    { "argument_with_void_return_type", &test_assert__argument_with_void_return_type },
+    { "internal", &test_assert__internal },
+    { "with_cleanup", &test_assert__with_cleanup }
+};
+static const struct clar_func _clar_cb_bitvec[] = {
+    { "0", &test_bitvec__0 }
+};
+static const struct clar_func _clar_cb_copy[] = {
+    { "file", &test_copy__file },
+    { "file_in_dir", &test_copy__file_in_dir },
+    { "tree", &test_copy__tree }
+};
+static const struct clar_func _clar_cb_dirent[] = {
+    { "dont_traverse_dot", &test_dirent__dont_traverse_dot },
+    { "traverse_subfolder", &test_dirent__traverse_subfolder },
+    { "traverse_slash_terminated_folder", &test_dirent__traverse_slash_terminated_folder },
+    { "dont_traverse_empty_folders", &test_dirent__dont_traverse_empty_folders },
+    { "traverse_weird_filenames", &test_dirent__traverse_weird_filenames },
+    { "length_limits", &test_dirent__length_limits },
+    { "empty_dir", &test_dirent__empty_dir },
+    { "diriter_with_fullname", &test_dirent__diriter_with_fullname },
+    { "diriter_at_directory_root", &test_dirent__diriter_at_directory_root }
+};
+static const struct clar_func _clar_cb_encoding[] = {
+    { "decode", &test_encoding__decode },
+    { "encode", &test_encoding__encode }
+};
+static const struct clar_func _clar_cb_errors[] = {
+    { "public_api", &test_errors__public_api },
+    { "new_school", &test_errors__new_school },
+    { "restore", &test_errors__restore },
+    { "free_state", &test_errors__free_state },
+    { "restore_oom", &test_errors__restore_oom },
+    { "integer_overflow_alloc_multiply", &test_errors__integer_overflow_alloc_multiply },
+    { "integer_overflow_alloc_add", &test_errors__integer_overflow_alloc_add },
+    { "integer_overflow_sets_oom", &test_errors__integer_overflow_sets_oom }
+};
+static const struct clar_func _clar_cb_filebuf[] = {
+    { "0", &test_filebuf__0 },
+    { "1", &test_filebuf__1 },
+    { "2", &test_filebuf__2 },
+    { "4", &test_filebuf__4 },
+    { "5", &test_filebuf__5 },
+    { "umask", &test_filebuf__umask },
+    { "rename_error", &test_filebuf__rename_error },
+    { "symlink_follow", &test_filebuf__symlink_follow },
+    { "symlink_follow_absolute_paths", &test_filebuf__symlink_follow_absolute_paths },
+    { "symlink_depth", &test_filebuf__symlink_depth },
+    { "hidden_file", &test_filebuf__hidden_file },
+    { "detects_directory", &test_filebuf__detects_directory }
+};
+static const struct clar_func _clar_cb_ftruncate[] = {
+    { "2gb", &test_ftruncate__2gb },
+    { "4gb", &test_ftruncate__4gb }
+};
+static const struct clar_func _clar_cb_futils[] = {
+    { "writebuffer", &test_futils__writebuffer },
+    { "write_hidden_file", &test_futils__write_hidden_file },
+    { "recursive_rmdir_keeps_symlink_targets", &test_futils__recursive_rmdir_keeps_symlink_targets },
+    { "mktmp_umask", &test_futils__mktmp_umask }
+};
+static const struct clar_func _clar_cb_gitstr[] = {
+    { "0", &test_gitstr__0 },
+    { "1", &test_gitstr__1 },
+    { "2", &test_gitstr__2 },
+    { "3", &test_gitstr__3 },
+    { "4", &test_gitstr__4 },
+    { "5", &test_gitstr__5 },
+    { "6", &test_gitstr__6 },
+    { "7", &test_gitstr__7 },
+    { "8", &test_gitstr__8 },
+    { "9", &test_gitstr__9 },
+    { "10", &test_gitstr__10 },
+    { "join3", &test_gitstr__join3 },
+    { "11", &test_gitstr__11 },
+    { "rfind_variants", &test_gitstr__rfind_variants },
+    { "puts_escaped", &test_gitstr__puts_escaped },
+    { "unescape", &test_gitstr__unescape },
+    { "encode_base64", &test_gitstr__encode_base64 },
+    { "decode_base64", &test_gitstr__decode_base64 },
+    { "encode_base85", &test_gitstr__encode_base85 },
+    { "decode_base85", &test_gitstr__decode_base85 },
+    { "decode_base85_fails_gracefully", &test_gitstr__decode_base85_fails_gracefully },
+    { "classify_with_utf8", &test_gitstr__classify_with_utf8 },
+    { "lf_and_crlf_conversions", &test_gitstr__lf_and_crlf_conversions },
+    { "dont_grow_borrowed", &test_gitstr__dont_grow_borrowed },
+    { "dont_hit_infinite_loop_when_resizing", &test_gitstr__dont_hit_infinite_loop_when_resizing },
+    { "avoid_printing_into_oom_buffer", &test_gitstr__avoid_printing_into_oom_buffer }
+};
+static const struct clar_func _clar_cb_hex[] = {
+    { "fromhex", &test_hex__fromhex }
+};
+static const struct clar_func _clar_cb_iconv[] = {
+    { "unchanged", &test_iconv__unchanged },
+    { "decomposed_to_precomposed", &test_iconv__decomposed_to_precomposed },
+    { "precomposed_is_unmodified", &test_iconv__precomposed_is_unmodified }
+};
+static const struct clar_func _clar_cb_init[] = {
+    { "returns_count", &test_init__returns_count },
+    { "reinit_succeeds", &test_init__reinit_succeeds },
+    { "concurrent_init_succeeds", &test_init__concurrent_init_succeeds }
+};
+static const struct clar_func _clar_cb_integer[] = {
+    { "multiply_int64_no_overflow", &test_integer__multiply_int64_no_overflow },
+    { "multiply_int64_overflow", &test_integer__multiply_int64_overflow },
+    { "multiply_int64_edge_cases", &test_integer__multiply_int64_edge_cases }
+};
+static const struct clar_func _clar_cb_link[] = {
+    { "stat_regular_file", &test_link__stat_regular_file },
+    { "lstat_regular_file", &test_link__lstat_regular_file },
+    { "stat_symlink", &test_link__stat_symlink },
+    { "stat_symlink_directory", &test_link__stat_symlink_directory },
+    { "stat_symlink_chain", &test_link__stat_symlink_chain },
+    { "stat_dangling_symlink", &test_link__stat_dangling_symlink },
+    { "stat_dangling_symlink_directory", &test_link__stat_dangling_symlink_directory },
+    { "lstat_symlink", &test_link__lstat_symlink },
+    { "lstat_symlink_directory", &test_link__lstat_symlink_directory },
+    { "lstat_dangling_symlink", &test_link__lstat_dangling_symlink },
+    { "lstat_dangling_symlink_directory", &test_link__lstat_dangling_symlink_directory },
+    { "stat_junction", &test_link__stat_junction },
+    { "stat_dangling_junction", &test_link__stat_dangling_junction },
+    { "lstat_junction", &test_link__lstat_junction },
+    { "lstat_dangling_junction", &test_link__lstat_dangling_junction },
+    { "stat_hardlink", &test_link__stat_hardlink },
+    { "lstat_hardlink", &test_link__lstat_hardlink },
+    { "stat_reparse_point", &test_link__stat_reparse_point },
+    { "lstat_reparse_point", &test_link__lstat_reparse_point },
+    { "readlink_nonexistent_file", &test_link__readlink_nonexistent_file },
+    { "readlink_normal_file", &test_link__readlink_normal_file },
+    { "readlink_symlink", &test_link__readlink_symlink },
+    { "readlink_dangling", &test_link__readlink_dangling },
+    { "readlink_multiple", &test_link__readlink_multiple }
+};
+static const struct clar_func _clar_cb_memmem[] = {
+    { "found", &test_memmem__found },
+    { "absent", &test_memmem__absent },
+    { "edgecases", &test_memmem__edgecases }
+};
+static const struct clar_func _clar_cb_mkdir[] = {
+    { "absolute", &test_mkdir__absolute },
+    { "basic", &test_mkdir__basic },
+    { "with_base", &test_mkdir__with_base },
+    { "chmods", &test_mkdir__chmods },
+    { "keeps_parent_symlinks", &test_mkdir__keeps_parent_symlinks },
+    { "mkdir_path_inside_unwriteable_parent", &test_mkdir__mkdir_path_inside_unwriteable_parent }
+};
+static const struct clar_func _clar_cb_path[] = {
+    { "00_dirname", &test_path__00_dirname },
+    { "01_basename", &test_path__01_basename },
+    { "05_joins", &test_path__05_joins },
+    { "06_long_joins", &test_path__06_long_joins },
+    { "07_path_to_dir", &test_path__07_path_to_dir },
+    { "08_self_join", &test_path__08_self_join },
+    { "09_percent_decode", &test_path__09_percent_decode },
+    { "10_fromurl", &test_path__10_fromurl },
+    { "11_walkup", &test_path__11_walkup },
+    { "11a_walkup_cancel", &test_path__11a_walkup_cancel },
+    { "12_offset_to_path_root", &test_path__12_offset_to_path_root },
+    { "13_cannot_prettify_a_non_existing_file", &test_path__13_cannot_prettify_a_non_existing_file },
+    { "14_apply_relative", &test_path__14_apply_relative },
+    { "15_resolve_relative", &test_path__15_resolve_relative },
+    { "16_resolve_relative", &test_path__16_resolve_relative },
+    { "find_exe_in_path", &test_path__find_exe_in_path },
+    { "validate_current_user_ownership", &test_path__validate_current_user_ownership }
+};
+static const struct clar_func _clar_cb_path_core[] = {
+    { "make_relative", &test_path_core__make_relative },
+    { "isvalid_standard", &test_path_core__isvalid_standard },
+    { "isvalid_standard_str", &test_path_core__isvalid_standard_str },
+    { "isvalid_empty_dir_component", &test_path_core__isvalid_empty_dir_component },
+    { "isvalid_dot_and_dotdot", &test_path_core__isvalid_dot_and_dotdot },
+    { "isvalid_backslash", &test_path_core__isvalid_backslash },
+    { "isvalid_trailing_dot", &test_path_core__isvalid_trailing_dot },
+    { "isvalid_trailing_space", &test_path_core__isvalid_trailing_space },
+    { "isvalid_trailing_colon", &test_path_core__isvalid_trailing_colon },
+    { "isvalid_dos_paths", &test_path_core__isvalid_dos_paths },
+    { "isvalid_dos_paths_withnum", &test_path_core__isvalid_dos_paths_withnum },
+    { "isvalid_nt_chars", &test_path_core__isvalid_nt_chars },
+    { "join_unrooted", &test_path_core__join_unrooted },
+    { "join_unrooted_respects_funny_windows_roots", &test_path_core__join_unrooted_respects_funny_windows_roots }
+};
+static const struct clar_func _clar_cb_path_win32[] = {
+    { "utf8_to_utf16", &test_path_win32__utf8_to_utf16 },
+    { "removes_trailing_slash", &test_path_win32__removes_trailing_slash },
+    { "squashes_multiple_slashes", &test_path_win32__squashes_multiple_slashes },
+    { "unc", &test_path_win32__unc },
+    { "honors_max_path", &test_path_win32__honors_max_path },
+    { "dot_and_dotdot", &test_path_win32__dot_and_dotdot },
+    { "absolute_from_no_drive_letter", &test_path_win32__absolute_from_no_drive_letter },
+    { "absolute_from_relative", &test_path_win32__absolute_from_relative },
+    { "keeps_relative", &test_path_win32__keeps_relative },
+    { "remove_namespace", &test_path_win32__remove_namespace },
+    { "canonicalize", &test_path_win32__canonicalize },
+    { "8dot3_name", &test_path_win32__8dot3_name }
+};
+static const struct clar_func _clar_cb_pool[] = {
+    { "0", &test_pool__0 },
+    { "1", &test_pool__1 },
+    { "strndup_limit", &test_pool__strndup_limit }
+};
+static const struct clar_func _clar_cb_posix[] = {
+    { "inet_pton", &test_posix__inet_pton },
+    { "utimes", &test_posix__utimes },
+    { "unlink_removes_symlink", &test_posix__unlink_removes_symlink },
+    { "symlink_resolves_to_correct_type", &test_posix__symlink_resolves_to_correct_type },
+    { "relative_symlink", &test_posix__relative_symlink },
+    { "symlink_to_file_across_dirs", &test_posix__symlink_to_file_across_dirs }
+};
+static const struct clar_func _clar_cb_pqueue[] = {
+    { "items_are_put_in_order", &test_pqueue__items_are_put_in_order },
+    { "interleave_inserts_and_pops", &test_pqueue__interleave_inserts_and_pops },
+    { "max_heap_size", &test_pqueue__max_heap_size },
+    { "max_heap_size_without_comparison", &test_pqueue__max_heap_size_without_comparison },
+    { "interleaved_pushes_and_pops", &test_pqueue__interleaved_pushes_and_pops }
+};
+static const struct clar_func _clar_cb_qsort[] = {
+    { "array_with_single_entry", &test_qsort__array_with_single_entry },
+    { "array_with_equal_entries", &test_qsort__array_with_equal_entries },
+    { "sorted_array", &test_qsort__sorted_array },
+    { "unsorted_array", &test_qsort__unsorted_array },
+    { "sorting_strings", &test_qsort__sorting_strings },
+    { "sorting_big_entries", &test_qsort__sorting_big_entries }
+};
+static const struct clar_func _clar_cb_regexp[] = {
+    { "compile_ignores_global_locale_ctype", &test_regexp__compile_ignores_global_locale_ctype },
+    { "compile_ignores_global_locale_collate", &test_regexp__compile_ignores_global_locale_collate },
+    { "regex_matches_digits_with_locale", &test_regexp__regex_matches_digits_with_locale },
+    { "regex_matches_alphabet_with_locale", &test_regexp__regex_matches_alphabet_with_locale },
+    { "simple_search_matches", &test_regexp__simple_search_matches },
+    { "case_insensitive_search_matches", &test_regexp__case_insensitive_search_matches },
+    { "nonmatching_search_returns_error", &test_regexp__nonmatching_search_returns_error },
+    { "search_finds_complete_match", &test_regexp__search_finds_complete_match },
+    { "search_finds_correct_offsets", &test_regexp__search_finds_correct_offsets },
+    { "search_finds_empty_group", &test_regexp__search_finds_empty_group },
+    { "search_fills_matches_with_first_matching_groups", &test_regexp__search_fills_matches_with_first_matching_groups },
+    { "search_skips_nonmatching_group", &test_regexp__search_skips_nonmatching_group },
+    { "search_initializes_trailing_nonmatching_groups", &test_regexp__search_initializes_trailing_nonmatching_groups }
+};
+static const struct clar_func _clar_cb_rmdir[] = {
+    { "delete_recursive", &test_rmdir__delete_recursive },
+    { "fail_to_delete_non_empty_dir", &test_rmdir__fail_to_delete_non_empty_dir },
+    { "keep_base", &test_rmdir__keep_base },
+    { "can_skip_non_empty_dir", &test_rmdir__can_skip_non_empty_dir },
+    { "can_remove_empty_parents", &test_rmdir__can_remove_empty_parents }
+};
+static const struct clar_func _clar_cb_sha1[] = {
+    { "sum", &test_sha1__sum },
+    { "detect_collision_attack", &test_sha1__detect_collision_attack },
+    { "win32_providers", &test_sha1__win32_providers }
+};
+static const struct clar_func _clar_cb_sha256[] = {
+    { "empty", &test_sha256__empty },
+    { "hello", &test_sha256__hello },
+    { "pdf", &test_sha256__pdf },
+    { "win32_providers", &test_sha256__win32_providers }
+};
+static const struct clar_func _clar_cb_sortedcache[] = {
+    { "name_only", &test_sortedcache__name_only },
+    { "in_memory", &test_sortedcache__in_memory },
+    { "on_disk", &test_sortedcache__on_disk }
+};
+static const struct clar_func _clar_cb_stat[] = {
+    { "0", &test_stat__0 },
+    { "root", &test_stat__root }
+};
+static const struct clar_func _clar_cb_str_basic[] = {
+    { "resize", &test_str_basic__resize },
+    { "resize_incremental", &test_str_basic__resize_incremental },
+    { "printf", &test_str_basic__printf }
+};
+static const struct clar_func _clar_cb_str_oom[] = {
+    { "grow", &test_str_oom__grow },
+    { "grow_by", &test_str_oom__grow_by }
+};
+static const struct clar_func _clar_cb_str_percent[] = {
+    { "decode_succeeds", &test_str_percent__decode_succeeds },
+    { "ignores_invalid", &test_str_percent__ignores_invalid }
+};
+static const struct clar_func _clar_cb_str_quote[] = {
+    { "quote_succeeds", &test_str_quote__quote_succeeds },
+    { "unquote_succeeds", &test_str_quote__unquote_succeeds },
+    { "unquote_fails", &test_str_quote__unquote_fails }
+};
+static const struct clar_func _clar_cb_str_splice[] = {
+    { "preprend", &test_str_splice__preprend },
+    { "append", &test_str_splice__append },
+    { "insert_at", &test_str_splice__insert_at },
+    { "remove_at", &test_str_splice__remove_at },
+    { "replace", &test_str_splice__replace },
+    { "replace_with_longer", &test_str_splice__replace_with_longer },
+    { "replace_with_shorter", &test_str_splice__replace_with_shorter },
+    { "truncate", &test_str_splice__truncate },
+    { "dont_do_anything", &test_str_splice__dont_do_anything }
+};
+static const struct clar_func _clar_cb_string[] = {
+    { "0", &test_string__0 },
+    { "1", &test_string__1 },
+    { "2", &test_string__2 },
+    { "prefixncmp", &test_string__prefixncmp },
+    { "prefixncmp_icase", &test_string__prefixncmp_icase },
+    { "strcmp", &test_string__strcmp },
+    { "strcasecmp", &test_string__strcasecmp },
+    { "strlcmp", &test_string__strlcmp }
+};
+static const struct clar_func _clar_cb_strmap[] = {
+    { "0", &test_strmap__0 },
+    { "inserted_strings_can_be_retrieved", &test_strmap__inserted_strings_can_be_retrieved },
+    { "deleted_entry_cannot_be_retrieved", &test_strmap__deleted_entry_cannot_be_retrieved },
+    { "inserting_many_keys_succeeds", &test_strmap__inserting_many_keys_succeeds },
+    { "get_succeeds_with_existing_entries", &test_strmap__get_succeeds_with_existing_entries },
+    { "get_returns_null_on_nonexisting_key", &test_strmap__get_returns_null_on_nonexisting_key },
+    { "set_persists_key", &test_strmap__set_persists_key },
+    { "set_persists_multpile_keys", &test_strmap__set_persists_multpile_keys },
+    { "set_updates_existing_key", &test_strmap__set_updates_existing_key },
+    { "iteration", &test_strmap__iteration },
+    { "iterating_empty_map_stops_immediately", &test_strmap__iterating_empty_map_stops_immediately }
+};
+static const struct clar_func _clar_cb_strtol[] = {
+    { "int32", &test_strtol__int32 },
+    { "int64", &test_strtol__int64 },
+    { "base_autodetection", &test_strtol__base_autodetection },
+    { "buffer_length_with_autodetection_truncates", &test_strtol__buffer_length_with_autodetection_truncates },
+    { "buffer_length_truncates", &test_strtol__buffer_length_truncates },
+    { "buffer_length_with_leading_ws_truncates", &test_strtol__buffer_length_with_leading_ws_truncates },
+    { "buffer_length_with_leading_sign_truncates", &test_strtol__buffer_length_with_leading_sign_truncates },
+    { "error_message_cuts_off", &test_strtol__error_message_cuts_off }
+};
+static const struct clar_func _clar_cb_utf8[] = {
+    { "char_length", &test_utf8__char_length }
+};
+static const struct clar_func _clar_cb_vector[] = {
+    { "0", &test_vector__0 },
+    { "1", &test_vector__1 },
+    { "2", &test_vector__2 },
+    { "3", &test_vector__3 },
+    { "4", &test_vector__4 },
+    { "5", &test_vector__5 },
+    { "remove_matching", &test_vector__remove_matching },
+    { "grow_and_shrink", &test_vector__grow_and_shrink },
+    { "reverse", &test_vector__reverse },
+    { "dup_empty_vector", &test_vector__dup_empty_vector }
+};
+static const struct clar_func _clar_cb_wildmatch[] = {
+    { "basic_wildmatch", &test_wildmatch__basic_wildmatch },
+    { "slash_matching_features", &test_wildmatch__slash_matching_features },
+    { "various_additional", &test_wildmatch__various_additional },
+    { "character_classes", &test_wildmatch__character_classes },
+    { "additional_with_malformed", &test_wildmatch__additional_with_malformed },
+    { "recursion", &test_wildmatch__recursion },
+    { "pathmatch", &test_wildmatch__pathmatch },
+    { "case_sensitivity", &test_wildmatch__case_sensitivity }
+};
+static const struct clar_func _clar_cb_zstream[] = {
+    { "basic", &test_zstream__basic },
+    { "fails_on_trailing_garbage", &test_zstream__fails_on_trailing_garbage },
+    { "buffer", &test_zstream__buffer },
+    { "big_data", &test_zstream__big_data }
+};
+static struct clar_suite _clar_suites[] = {
+    {
+        "array",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_array, 1, 1
+    },
+    {
+        "assert",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_assert, 5, 1
+    },
+    {
+        "bitvec",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_bitvec, 1, 1
+    },
+    {
+        "copy",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_copy, 3, 1
+    },
+    {
+        "dirent",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_dirent, 9, 1
+    },
+    {
+        "encoding",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_encoding, 2, 1
+    },
+    {
+        "errors",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_errors, 8, 1
+    },
+    {
+        "filebuf",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_filebuf, 12, 1
+    },
+    {
+        "ftruncate",
+        { "initialize", &test_ftruncate__initialize },
+        { "cleanup", &test_ftruncate__cleanup },
+        _clar_cb_ftruncate, 2, 1
+    },
+    {
+        "futils",
+        { "initialize", &test_futils__initialize },
+        { "cleanup", &test_futils__cleanup },
+        _clar_cb_futils, 4, 1
+    },
+    {
+        "gitstr",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_gitstr, 26, 1
+    },
+    {
+        "hex",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_hex, 1, 1
+    },
+    {
+        "iconv",
+        { "initialize", &test_iconv__initialize },
+        { "cleanup", &test_iconv__cleanup },
+        _clar_cb_iconv, 3, 1
+    },
+    {
+        "init",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_init, 3, 1
+    },
+    {
+        "integer",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_integer, 3, 1
+    },
+    {
+        "link",
+        { NULL, NULL },
+        { "cleanup", &test_link__cleanup },
+        _clar_cb_link, 24, 1
+    },
+    {
+        "memmem",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_memmem, 3, 1
+    },
+    {
+        "mkdir",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_mkdir, 6, 1
+    },
+    {
+        "path",
+        { "initialize", &test_path__initialize },
+        { "cleanup", &test_path__cleanup },
+        _clar_cb_path, 17, 1
+    },
+    {
+        "path::core",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_path_core, 14, 1
+    },
+    {
+        "path::win32",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_path_win32, 12, 1
+    },
+    {
+        "pool",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_pool, 3, 1
+    },
+    {
+        "posix",
+        { "initialize", &test_posix__initialize },
+        { NULL, NULL },
+        _clar_cb_posix, 6, 1
+    },
+    {
+        "pqueue",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_pqueue, 5, 1
+    },
+    {
+        "qsort",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_qsort, 6, 1
+    },
+    {
+        "regexp",
+        { "initialize", &test_regexp__initialize },
+        { "cleanup", &test_regexp__cleanup },
+        _clar_cb_regexp, 13, 1
+    },
+    {
+        "rmdir",
+        { "initialize", &test_rmdir__initialize },
+        { "cleanup", &test_rmdir__cleanup },
+        _clar_cb_rmdir, 5, 1
+    },
+    {
+        "sha1",
+        { "initialize", &test_sha1__initialize },
+        { "cleanup", &test_sha1__cleanup },
+        _clar_cb_sha1, 3, 1
+    },
+    {
+        "sha256",
+        { "initialize", &test_sha256__initialize },
+        { "cleanup", &test_sha256__cleanup },
+        _clar_cb_sha256, 4, 1
+    },
+    {
+        "sortedcache",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_sortedcache, 3, 1
+    },
+    {
+        "stat",
+        { "initialize", &test_stat__initialize },
+        { "cleanup", &test_stat__cleanup },
+        _clar_cb_stat, 2, 1
+    },
+    {
+        "str::basic",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_str_basic, 3, 1
+    },
+    {
+        "str::oom",
+        { "initialize", &test_str_oom__initialize },
+        { "cleanup", &test_str_oom__cleanup },
+        _clar_cb_str_oom, 2, 1
+    },
+    {
+        "str::percent",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_str_percent, 2, 1
+    },
+    {
+        "str::quote",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_str_quote, 3, 1
+    },
+    {
+        "str::splice",
+        { "initialize", &test_str_splice__initialize },
+        { "cleanup", &test_str_splice__cleanup },
+        _clar_cb_str_splice, 9, 1
+    },
+    {
+        "string",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_string, 8, 1
+    },
+    {
+        "strmap",
+        { "initialize", &test_strmap__initialize },
+        { "cleanup", &test_strmap__cleanup },
+        _clar_cb_strmap, 11, 1
+    },
+    {
+        "strtol",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_strtol, 8, 1
+    },
+    {
+        "utf8",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_utf8, 1, 1
+    },
+    {
+        "vector",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_vector, 10, 1
+    },
+    {
+        "wildmatch",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_wildmatch, 8, 1
+    },
+    {
+        "zstream",
+        { NULL, NULL },
+        { NULL, NULL },
+        _clar_cb_zstream, 4, 1
+    }
+};
+static const size_t _clar_suite_count = 43;
+static const size_t _clar_callback_count = 278;

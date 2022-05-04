@@ -1,0 +1,4979 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "libgit2/libgit2_tests"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"add_definitions",
+			"target_include_directories",
+			"set_target_properties"
+		],
+		"files" : 
+		[
+			"libgit2/tests/libgit2/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 41,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 46,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 43,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -g -D_DEBUG -O0"
+				},
+				{
+					"fragment" : "-std=gnu90"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "CLAR_FIXTURE_PATH=\"/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/resources/\""
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CLAR_TMPDIR=\"libgit2_tests\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "CLAR_WIN32_LONGPATHS"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "GIT_DEPRECATE_HARD"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "_FILE_OFFSET_BITS=64"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/clar"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/tests/libgit2"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/src/libgit2"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/src/util"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/deps/http-parser"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/deps/zlib"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/deps/ntlmclient"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					9
+				],
+				"standard" : "90"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				7,
+				9,
+				11,
+				13,
+				14,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				93,
+				94,
+				95,
+				96,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				118,
+				119,
+				120,
+				121,
+				123,
+				124,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				162,
+				163,
+				164,
+				165,
+				167,
+				168,
+				169,
+				171,
+				172,
+				173,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258,
+				260,
+				263,
+				264,
+				265,
+				266,
+				267,
+				268,
+				269,
+				270,
+				271,
+				272,
+				273,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				284,
+				285,
+				286,
+				288,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316,
+				317,
+				318,
+				319,
+				320,
+				321,
+				322,
+				323,
+				324,
+				325,
+				326,
+				327,
+				329,
+				330,
+				331,
+				332,
+				334,
+				335,
+				336,
+				337,
+				338,
+				339,
+				340,
+				341,
+				342,
+				343,
+				344,
+				345,
+				346,
+				347,
+				348,
+				349,
+				350,
+				351,
+				352,
+				353,
+				354,
+				355,
+				356,
+				357,
+				358,
+				359,
+				360,
+				362,
+				363,
+				364,
+				365,
+				366,
+				367,
+				368,
+				369,
+				370,
+				372,
+				373,
+				374,
+				375,
+				376,
+				377,
+				378,
+				379,
+				380,
+				381,
+				382,
+				383,
+				384,
+				385,
+				387,
+				388,
+				389,
+				391,
+				393,
+				394,
+				395,
+				396,
+				397,
+				398,
+				399,
+				400,
+				401,
+				402,
+				403,
+				404,
+				405,
+				406,
+				407,
+				408,
+				409,
+				411,
+				412,
+				413,
+				414,
+				415,
+				416,
+				417,
+				419,
+				420,
+				421,
+				422,
+				423,
+				424,
+				425,
+				426,
+				427,
+				428,
+				429,
+				430,
+				431,
+				432,
+				433,
+				434,
+				435,
+				436
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "http-parser::@67434b243eb72c8ad23b"
+		},
+		{
+			"id" : "zlib::@d746e9c1079018048906"
+		},
+		{
+			"id" : "ntlmclient::@03d5f268ecf1eccac0e2"
+		},
+		{
+			"id" : "libgit2::@dba1225dd22255d1426f"
+		},
+		{
+			"id" : "util::@0d2c5bbb220ebdff66a4"
+		}
+	],
+	"id" : "libgit2_tests::@a465d425b2648a25ff0a",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -g -D_DEBUG -O0",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/usr/lib/libssl.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/usr/lib/libcrypto.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/usr/lib/libpcre.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/usr/lib/libpcreposix.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "libgit2_tests",
+	"nameOnDisk" : "libgit2_tests",
+	"paths" : 
+	{
+		"build" : "libgit2/tests/libgit2",
+		"source" : "libgit2/tests/libgit2"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				7,
+				9,
+				11,
+				13,
+				14,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				93,
+				94,
+				95,
+				96,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				118,
+				119,
+				120,
+				121,
+				123,
+				124,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				162,
+				163,
+				164,
+				165,
+				167,
+				168,
+				169,
+				171,
+				172,
+				173,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258,
+				260,
+				263,
+				264,
+				265,
+				266,
+				267,
+				268,
+				269,
+				270,
+				271,
+				272,
+				273,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				284,
+				285,
+				286,
+				288,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316,
+				317,
+				318,
+				319,
+				320,
+				321,
+				322,
+				323,
+				324,
+				325,
+				326,
+				327,
+				329,
+				330,
+				331,
+				332,
+				334,
+				335,
+				336,
+				337,
+				338,
+				339,
+				340,
+				341,
+				342,
+				343,
+				344,
+				345,
+				346,
+				347,
+				348,
+				349,
+				350,
+				351,
+				352,
+				353,
+				354,
+				355,
+				356,
+				357,
+				358,
+				359,
+				360,
+				362,
+				363,
+				364,
+				365,
+				366,
+				367,
+				368,
+				369,
+				370,
+				372,
+				373,
+				374,
+				375,
+				376,
+				377,
+				378,
+				379,
+				380,
+				381,
+				382,
+				383,
+				384,
+				385,
+				387,
+				388,
+				389,
+				391,
+				393,
+				394,
+				395,
+				396,
+				397,
+				398,
+				399,
+				400,
+				401,
+				402,
+				403,
+				404,
+				405,
+				406,
+				407,
+				408,
+				409,
+				411,
+				412,
+				413,
+				414,
+				415,
+				416,
+				417,
+				419,
+				420,
+				421,
+				422,
+				423,
+				424,
+				425,
+				426,
+				427,
+				428,
+				429,
+				430,
+				431,
+				432,
+				433,
+				434,
+				435,
+				436
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				8,
+				10,
+				12,
+				15,
+				25,
+				32,
+				39,
+				63,
+				92,
+				97,
+				117,
+				122,
+				125,
+				144,
+				161,
+				166,
+				170,
+				174,
+				223,
+				247,
+				259,
+				261,
+				262,
+				274,
+				283,
+				287,
+				289,
+				328,
+				333,
+				361,
+				371,
+				386,
+				390,
+				392,
+				410,
+				418,
+				437
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				438,
+				439,
+				440,
+				441,
+				442,
+				443,
+				444,
+				445,
+				446,
+				447,
+				448,
+				449,
+				450,
+				451,
+				452,
+				453,
+				454,
+				455,
+				456,
+				457,
+				458,
+				459,
+				460,
+				461,
+				462,
+				463,
+				464,
+				465,
+				466,
+				467,
+				468,
+				469,
+				470,
+				471,
+				472,
+				473,
+				474,
+				475,
+				476,
+				477,
+				478,
+				479,
+				480,
+				481,
+				482,
+				483,
+				484,
+				485,
+				486,
+				487,
+				488,
+				489,
+				490,
+				491,
+				492,
+				493,
+				494,
+				495,
+				496,
+				497,
+				498,
+				499,
+				500,
+				501,
+				502,
+				503,
+				504,
+				505,
+				506,
+				507,
+				508,
+				509,
+				510,
+				511,
+				512,
+				513,
+				514,
+				515,
+				516,
+				517,
+				518,
+				519,
+				520,
+				521,
+				522,
+				523,
+				524,
+				525,
+				526,
+				527,
+				528,
+				529,
+				530,
+				531,
+				532,
+				533,
+				534,
+				535,
+				536,
+				537,
+				538,
+				539,
+				540,
+				541,
+				542,
+				543,
+				544,
+				545,
+				546,
+				547,
+				548,
+				549,
+				550,
+				551,
+				552,
+				553,
+				554,
+				555,
+				556,
+				557,
+				558,
+				559,
+				560,
+				561,
+				562,
+				563,
+				564,
+				565,
+				566,
+				567,
+				568,
+				569,
+				570,
+				571,
+				572,
+				573,
+				574,
+				575,
+				576,
+				577,
+				578,
+				579,
+				580,
+				581,
+				582,
+				583,
+				584,
+				585,
+				586,
+				587,
+				588,
+				589,
+				590,
+				591,
+				592,
+				593,
+				594,
+				595,
+				596,
+				597,
+				598,
+				599,
+				600,
+				601,
+				602,
+				603,
+				604,
+				605,
+				606,
+				607,
+				608,
+				609,
+				610,
+				611,
+				612,
+				613,
+				614,
+				615,
+				616,
+				617,
+				618,
+				619,
+				620
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				621
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/clar/clar.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/clar/clar.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/clar/clar/fixtures.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/clar/clar/fs.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/clar/clar/print.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/clar/clar/sandbox.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/clar/clar/summary.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/clar/clar_libgit2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/clar/clar_libgit2.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/clar/clar_libgit2_timer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/clar/clar_libgit2_timer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/clar/clar_libgit2_trace.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/clar/clar_libgit2_trace.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/clar/main.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/apply/apply_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/apply/apply_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/apply/both.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/apply/callbacks.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/apply/check.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/apply/fromdiff.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/apply/fromfile.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/apply/index.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/apply/partial.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/apply/tree.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/apply/workdir.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/attr/attr_expect.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/attr/file.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/attr/flags.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/attr/lookup.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/attr/macro.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/attr/repo.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/blame/blame_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/blame/blame_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/blame/buffer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/blame/getters.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/blame/harder.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/blame/simple.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/checkout/binaryunicode.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/checkout/checkout_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/checkout/checkout_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/checkout/conflict.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/checkout/crlf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/checkout/head.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/checkout/icase.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/checkout/index.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/checkout/nasty.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/checkout/tree.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/checkout/typechange.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/cherrypick/bare.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/cherrypick/workdir.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/clone/empty.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/clone/local.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/clone/nonetwork.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/clone/transport.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/commit/commit.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/commit/parent.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/commit/parse.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/commit/signature.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/commit/write.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/config/add.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/config/backend.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/config/conditionals.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/config/config_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/config/config_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/config/configlevel.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/config/global.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/config/include.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/config/memory.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/config/multivar.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/config/new.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/config/read.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/config/readonly.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/config/rename.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/config/snapshot.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/config/stress.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/config/validkeyname.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/config/write.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/core/buf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/core/env.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/core/features.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/core/hashsig.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/core/oid.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/core/oidmap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/core/opts.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/core/pool.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/core/structinit.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/core/useragent.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/date/date.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/date/rfc2822.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/delta/apply.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/describe/describe.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/describe/describe_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/describe/describe_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/describe/t6120.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/binary.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/blob.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/diff_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/diff/diff_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/diffiter.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/drivers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/externalmodifications.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/format_email.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/index.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/notify.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/parse.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/patch.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/patchid.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/pathspec.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/racediffiter.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/rename.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/stats.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/submodules.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/tree.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/userdiff.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/diff/workdir.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/email/create.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/fetch/local.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/fetchhead/fetchhead_data.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/fetchhead/nonetwork.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/filter/bare.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/filter/blob.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/filter/crlf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/filter/crlf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/filter/custom.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/filter/custom_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/filter/custom_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/filter/file.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/filter/ident.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/filter/query.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/filter/stream.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/filter/systemattrs.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/filter/wildcard.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/graph/ahead_behind.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/graph/commitgraph.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/graph/descendant_of.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/graph/reachable_from_any.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/ignore/path.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/ignore/status.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/add.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/addall.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/bypath.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/cache.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/collision.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/conflicts.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/index/conflicts.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/crlf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/filemodes.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/inmemory.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/names.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/nsec.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/racy.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/read_index.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/read_tree.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/rename.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/reuc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/splitindex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/stage.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/tests.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/index/version.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/iterator/index.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/iterator/iterator_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/iterator/iterator_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/iterator/tree.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/iterator/workdir.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/mailmap/basic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/mailmap/blame.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/mailmap/mailmap_testdata.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/mailmap/parsing.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/analysis.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/annotated_commit.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/merge/conflict_data.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/driver.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/files.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/merge_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/merge/merge_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/trees/automerge.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/trees/commits.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/trees/modeconflict.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/trees/recursive.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/trees/renames.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/trees/treediff.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/trees/trivial.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/trees/whitespace.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/workdir/dirty.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/workdir/recursive.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/workdir/renames.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/workdir/setup.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/workdir/simple.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/workdir/submodules.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/merge/workdir/trivial.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/message/trailer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/network/cred.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/network/fetchlocal.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/network/matchhost.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/network/refspecs.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/network/remote/defaultbranch.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/network/remote/delete.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/network/remote/isvalidname.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/network/remote/local.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/network/remote/push.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/network/remote/remotes.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/network/remote/rename.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/network/url/joinpath.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/network/url/parse.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/network/url/pattern.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/network/url/redirect.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/network/url/scp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/network/url/valid.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/notes/notes.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/notes/notesref.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/blob/filter.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/blob/fromstream.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/blob/write.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/cache.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/commit/commitstagedfile.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/commit/parse.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/lookup.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/lookupbypath.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/message.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/peel.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/raw/chars.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/raw/compare.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/raw/convert.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/object/raw/data.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/raw/fromstr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/raw/hash.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/raw/short.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/raw/size.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/raw/type2string.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/raw/write.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/shortid.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/tag/list.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/tag/parse.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/tag/peel.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/tag/read.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/tag/write.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/tree/attributes.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/tree/duplicateentries.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/tree/frompath.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/tree/parse.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/tree/read.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/tree/update.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/tree/walk.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/tree/write.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/object/validate.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/alternates.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/backend/backend_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/odb/backend/backend_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/backend/mempack.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/backend/multiple.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/backend/nobackend.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/backend/nonrefreshing.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/backend/refreshing.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/backend/simple.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/emptyobjects.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/foreach.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/freshen.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/largefiles.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/loose.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/odb/loose_data.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/mixed.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/odb/pack_data.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/odb/pack_data_one.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/packed.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/packed_one.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/sorting.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/odb/streamwrite.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/online/badssl.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/online/clone.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/online/customcert.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/online/fetch.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/online/fetchhead.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/online/push.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/online/push_util.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/online/push_util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/online/remotes.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/pack/filelimit.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/pack/indexer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/pack/midx.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/pack/packbuilder.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/pack/sharing.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/pack/threadsafety.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/patch/parse.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/patch/patch_common.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/patch/print.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/path/validate.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/perf/helper__perf__do_merge.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/perf/helper__perf__do_merge.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/perf/helper__perf__timer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/perf/helper__perf__timer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/perf/merge.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/rebase/abort.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/rebase/inmemory.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/rebase/iterator.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/rebase/merge.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/rebase/setup.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/rebase/sign.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/rebase/submodule.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/basic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/branches/checkedout.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/branches/create.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/branches/delete.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/branches/ishead.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/branches/iterator.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/branches/lookup.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/branches/move.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/branches/name.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/branches/remote.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/branches/upstream.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/branches/upstreamname.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/crashes.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/create.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/delete.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/dup.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/foreachglob.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/isvalidname.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/iterator.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/list.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/listall.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/lookup.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/namespaces.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/normalize.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/overwrite.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/pack.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/peel.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/races.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/read.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/ref_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/refs/ref_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/reflog/drop.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/reflog/messages.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/reflog/reflog.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/reflog/reflog_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/refs/reflog/reflog_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/rename.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/revparse.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/setter.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/shorthand.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/tags/name.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/transactions.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/unicode.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/refs/update.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/remote/create.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/remote/fetch.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/remote/httpproxy.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/remote/insteadof.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/remote/list.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/config.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/discover.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/env.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/extensions.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/getters.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/hashfile.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/head.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/headtree.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/message.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/new.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/open.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/pathspec.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/repo_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/repo/repo_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/reservedname.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/setters.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/shallow.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/state.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/repo/template.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/reset/default.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/reset/hard.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/reset/mixed.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/reset/reset_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/reset/reset_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/reset/soft.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/revert/bare.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/revert/rename.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/revert/workdir.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/revwalk/basic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/revwalk/hidecb.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/revwalk/mergebase.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/revwalk/signatureparsing.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/revwalk/simplify.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/stash/apply.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/stash/drop.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/stash/foreach.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/stash/save.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/stash/stash_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/stash/stash_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/stash/submodules.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/status/renames.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/status/single.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/status/status_data.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/status/status_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/status/status_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/status/submodules.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/status/worktree.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/status/worktree_init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/stream/deprecated.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/stream/registration.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/stress/diff.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/submodule/add.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/submodule/escape.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/submodule/init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/submodule/inject_option.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/submodule/lookup.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/submodule/modify.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/submodule/nosubs.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/submodule/open.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/submodule/repository_init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/submodule/status.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/submodule/submodule_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/submodule/submodule_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/submodule/update.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/threads/atomic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/threads/basic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/threads/diff.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/threads/iterator.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/threads/refdb.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/threads/thread_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/threads/thread_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/threads/tlsdata.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/trace/trace.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/trace/windows/stacktrace.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/transport/register.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/transports/smart/packet.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/win32/forbidden.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/win32/longpath.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/win32/systemdir.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/worktree/bare.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/worktree/config.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/worktree/merge.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/worktree/open.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/worktree/reflog.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/worktree/refs.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/worktree/repository.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/worktree/submodule.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/worktree/worktree.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libgit2/tests/libgit2/worktree/worktree_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libgit2/tests/libgit2/worktree/worktree_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/alloc.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/allocators/failalloc.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/allocators/stdalloc.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/allocators/win32_leakcheck.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/date.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/filebuf.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/fs_path.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/futils.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/hash.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/net.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/pool.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/posix.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/pqueue.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/rand.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/regexp.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/runtime.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/sortedcache.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/str.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/strmap.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/thread.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/tsort.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/utf8.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/util.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/varint.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/vector.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/wildmatch.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/zstream.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/unix/map.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/unix/realpath.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/hash/collisiondetect.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/hash/sha1dc/sha1.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/hash/sha1dc/ubc_check.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/util/CMakeFiles/util.dir/hash/openssl.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/annotated_commit.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/apply.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/attr.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/attr_file.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/attrcache.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/blame.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/blame_git.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/blob.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/branch.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/buf.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/cache.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/checkout.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/cherrypick.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/clone.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/commit.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/commit_graph.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/commit_list.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/config.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/config_cache.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/config_entries.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/config_file.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/config_mem.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/config_parse.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/config_snapshot.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/crlf.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/delta.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/describe.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/diff.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/diff_driver.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/diff_file.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/diff_generate.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/diff_parse.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/diff_print.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/diff_stats.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/diff_tform.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/diff_xdiff.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/email.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/errors.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/fetch.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/fetchhead.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/filter.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/graph.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/hashsig.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/ident.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/idxmap.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/ignore.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/index.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/indexer.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/iterator.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/libgit2.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/mailmap.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/merge.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/merge_driver.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/merge_file.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/message.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/midx.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/mwindow.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/netops.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/notes.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/object.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/object_api.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/odb.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/odb_loose.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/odb_mempack.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/odb_pack.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/offmap.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/oid.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/oidarray.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/oidmap.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/pack-objects.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/pack.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/parse.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/patch.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/patch_generate.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/patch_parse.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/path.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/pathspec.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/proxy.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/push.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/reader.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/rebase.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/refdb.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/refdb_fs.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/reflog.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/refs.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/refspec.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/remote.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/repository.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/reset.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/revert.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/revparse.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/revwalk.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/signature.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/stash.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/status.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/strarray.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/streams/mbedtls.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/streams/openssl.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/streams/openssl_dynamic.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/streams/openssl_legacy.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/streams/registry.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/streams/socket.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/streams/stransport.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/streams/tls.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/submodule.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/sysdir.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/tag.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/threadstate.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/trace.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/trailer.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/transaction.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/transport.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/transports/auth.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/transports/auth_negotiate.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/transports/auth_ntlm.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/transports/credential.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/transports/credential_helpers.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/transports/git.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/transports/http.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/transports/httpclient.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/transports/local.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/transports/smart.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/transports/smart_pkt.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/transports/smart_protocol.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/transports/ssh.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/transports/winhttp.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/tree-cache.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/tree.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/worktree.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/xdiff/xdiffi.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/xdiff/xemit.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/xdiff/xhistogram.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/xdiff/xmerge.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/xdiff/xpatience.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/xdiff/xprepare.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/src/libgit2/CMakeFiles/libgit2.dir/xdiff/xutils.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/deps/http-parser/CMakeFiles/http-parser.dir/http_parser.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/deps/zlib/CMakeFiles/zlib.dir/adler32.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/deps/zlib/CMakeFiles/zlib.dir/crc32.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/deps/zlib/CMakeFiles/zlib.dir/deflate.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/deps/zlib/CMakeFiles/zlib.dir/infback.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/deps/zlib/CMakeFiles/zlib.dir/inffast.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/deps/zlib/CMakeFiles/zlib.dir/inflate.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/deps/zlib/CMakeFiles/zlib.dir/inftrees.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/deps/zlib/CMakeFiles/zlib.dir/trees.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/deps/zlib/CMakeFiles/zlib.dir/zutil.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/deps/ntlmclient/CMakeFiles/ntlmclient.dir/ntlm.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/deps/ntlmclient/CMakeFiles/ntlmclient.dir/util.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/deps/ntlmclient/CMakeFiles/ntlmclient.dir/unicode_builtin.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/deps/ntlmclient/CMakeFiles/ntlmclient.dir/crypt_openssl.c.o",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/tests/libgit2/clar.suite.rule",
+			"sourceGroupIndex" : 3
+		}
+	],
+	"type" : "EXECUTABLE"
+}

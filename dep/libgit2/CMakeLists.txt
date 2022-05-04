@@ -32,8 +32,7 @@ if(WIN32)
       CACHE BOOL "" FORCE)
 endif()
 
-set(USE_BUNDLED_ZLIB ON CACHE BOOL "")
-
 add_subdirectory(libgit2)
 # otherwise the zlib is not available in the src/git
 set(LIBGIT2_DEPENDENCY_OBJECTS ${LIBGIT2_DEPENDENCY_OBJECTS} PARENT_SCOPE)
+set(LIBGIT2_SYSTEM_LIBS ${LIBGIT2_SYSTEM_LIBS} PARENT_SCOPE)

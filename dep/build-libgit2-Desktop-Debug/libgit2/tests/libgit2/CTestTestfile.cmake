@@ -1,0 +1,24 @@
+# CMake generated Testfile for 
+# Source directory: /home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2
+# Build directory: /home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/tests/libgit2
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(offline "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/libgit2_tests" "-v" "-xonline")
+set_tests_properties(offline PROPERTIES  _BACKTRACE_TRIPLES "/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/cmake/AddClarTest.cmake;5;add_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;67;add_clar_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;0;")
+add_test(invasive "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/libgit2_tests" "-v" "-score::ftruncate" "-sfilter::stream::bigfile" "-sodb::largefiles" "-siterator::workdir::filesystem_gunk" "-srepo::init" "-srepo::init::at_filesystem_root")
+set_tests_properties(invasive PROPERTIES  _BACKTRACE_TRIPLES "/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/cmake/AddClarTest.cmake;5;add_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;68;add_clar_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;0;")
+add_test(online "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/libgit2_tests" "-v" "-sonline" "-xonline::customcert")
+set_tests_properties(online PROPERTIES  _BACKTRACE_TRIPLES "/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/cmake/AddClarTest.cmake;5;add_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;69;add_clar_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;0;")
+add_test(online_customcert "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/libgit2_tests" "-v" "-sonline::customcert")
+set_tests_properties(online_customcert PROPERTIES  _BACKTRACE_TRIPLES "/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/cmake/AddClarTest.cmake;5;add_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;70;add_clar_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;0;")
+add_test(gitdaemon "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/libgit2_tests" "-v" "-sonline::push")
+set_tests_properties(gitdaemon PROPERTIES  _BACKTRACE_TRIPLES "/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/cmake/AddClarTest.cmake;5;add_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;71;add_clar_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;0;")
+add_test(ssh "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/libgit2_tests" "-v" "-sonline::push" "-sonline::clone::ssh_cert" "-sonline::clone::ssh_with_paths" "-sonline::clone::path_whitespace_ssh")
+set_tests_properties(ssh PROPERTIES  _BACKTRACE_TRIPLES "/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/cmake/AddClarTest.cmake;5;add_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;72;add_clar_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;0;")
+add_test(proxy "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/libgit2_tests" "-v" "-sonline::clone::proxy")
+set_tests_properties(proxy PROPERTIES  _BACKTRACE_TRIPLES "/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/cmake/AddClarTest.cmake;5;add_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;73;add_clar_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;0;")
+add_test(auth_clone "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/libgit2_tests" "-v" "-sonline::clone::cred")
+set_tests_properties(auth_clone PROPERTIES  _BACKTRACE_TRIPLES "/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/cmake/AddClarTest.cmake;5;add_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;74;add_clar_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;0;")
+add_test(auth_clone_and_push "/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/libgit2/libgit2_tests" "-v" "-sonline::clone::push" "-sonline::push")
+set_tests_properties(auth_clone_and_push PROPERTIES  _BACKTRACE_TRIPLES "/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/cmake/AddClarTest.cmake;5;add_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;75;add_clar_test;/home/martin/GITProjekte/Gittyup/dep/libgit2/libgit2/tests/libgit2/CMakeLists.txt;0;")

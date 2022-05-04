@@ -1,0 +1,180 @@
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIMESPEC failed with the following output:
+Change Dir: /home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_bdcb4 && [1/2] Building C object CMakeFiles/cmTC_bdcb4.dir/src.c.o
+FAILED: CMakeFiles/cmTC_bdcb4.dir/src.c.o 
+/usr/bin/gcc -DHAVE_STRUCT_STAT_ST_MTIMESPEC   -o CMakeFiles/cmTC_bdcb4.dir/src.c.o -c /home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/src.c
+/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/src.c:7:34: error: ‘struct stat’ has no member named ‘st_mtimespec’
+    7 |   (void)sizeof(((struct stat *)0)->st_mtimespec);
+      |                                  ^~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtimespec);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_MTIME_NSEC failed with the following output:
+Change Dir: /home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c9bf3 && [1/2] Building C object CMakeFiles/cmTC_c9bf3.dir/src.c.o
+FAILED: CMakeFiles/cmTC_c9bf3.dir/src.c.o 
+/usr/bin/gcc -DHAVE_STRUCT_STAT_MTIME_NSEC   -o CMakeFiles/cmTC_c9bf3.dir/src.c.o -c /home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/src.c
+/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/src.c:6:34: error: ‘struct stat’ has no member named ‘st_mtime_nsec’
+    6 |   (void)sizeof(((struct stat *)0)->st_mtime_nsec);
+      |                                  ^~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtime_nsec);
+  return 0;
+}
+
+Performing C SOURCE FILE Test IS_WDOCUMENTATION_SUPPORTED failed with the following output:
+Change Dir: /home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_fe560 && [1/2] Building C object CMakeFiles/cmTC_fe560.dir/src.c.o
+FAILED: CMakeFiles/cmTC_fe560.dir/src.c.o 
+/usr/bin/gcc -DIS_WDOCUMENTATION_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra    -Wdocumentation -o CMakeFiles/cmTC_fe560.dir/src.c.o -c /home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/src.c
+gcc: error: unrecognized command-line option '-Wdocumentation'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test IS_WC11_EXTENSIONS_SUPPORTED failed with the following output:
+Change Dir: /home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_afecd && [1/2] Building C object CMakeFiles/cmTC_afecd.dir/src.c.o
+FAILED: CMakeFiles/cmTC_afecd.dir/src.c.o 
+/usr/bin/gcc -DIS_WC11_EXTENSIONS_SUPPORTED  -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion    -Wc11-extensions -o CMakeFiles/cmTC_afecd.dir/src.c.o -c /home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/src.c
+gcc: error: unrecognized command-line option '-Wc11-extensions'; did you mean '-fms-extensions'?
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the regcomp_l exist failed with the following output:
+Change Dir: /home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3c07d && [1/2] Building C object CMakeFiles/cmTC_3c07d.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_3c07d.dir/CheckSymbolExists.c.o 
+/usr/bin/gcc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -o CMakeFiles/cmTC_3c07d.dir/CheckSymbolExists.c.o -c /home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:10: fatal error: xlocale.h: No such file or directory
+    3 | #include <xlocale.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <regex.h>
+#include <xlocale.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef regcomp_l
+  return ((int*)(&regcomp_l))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the prototype qsort_r exists for GIT_QSORT_R_BSD failed with the following output:
+Change Dir: /home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3aacd && [1/2] Building C object CMakeFiles/cmTC_3aacd.dir/CheckPrototypeDefinition.c.o
+FAILED: CMakeFiles/cmTC_3aacd.dir/CheckPrototypeDefinition.c.o 
+/usr/bin/gcc   -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -o CMakeFiles/cmTC_3aacd.dir/CheckPrototypeDefinition.c.o -c /home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:6: error: conflicting types for 'qsort_r'; have 'void(void *, size_t,  size_t,  void *, int (*)(void *, const void *, const void *))' {aka 'void(void *, long unsigned int,  long unsigned int,  void *, int (*)(void *, const void *, const void *))'}
+   14 | void qsort_r(void *base, size_t nmemb, size_t size, void *thunk, int (*compar)(void *, const void *, const void *)) {
+      |      ^~~~~~~
+In file included from /home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:1:
+/usr/include/stdlib.h:841:13: note: previous declaration of 'qsort_r' with type 'void(void *, size_t,  size_t,  int (*)(const void *, const void *, void *), void *)' {aka 'void(void *, long unsigned int,  long unsigned int,  int (*)(const void *, const void *, void *), void *)'}
+  841 | extern void qsort_r (void *__base, size_t __nmemb, size_t __size,
+      |             ^~~~~~~
+/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c: In function 'qsort_r':
+/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:20: warning: unused parameter 'base' [-Wunused-parameter]
+   14 | void qsort_r(void *base, size_t nmemb, size_t size, void *thunk, int (*compar)(void *, const void *, const void *)) {
+      |              ~~~~~~^~~~
+/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:33: warning: unused parameter 'nmemb' [-Wunused-parameter]
+   14 | void qsort_r(void *base, size_t nmemb, size_t size, void *thunk, int (*compar)(void *, const void *, const void *)) {
+      |                          ~~~~~~~^~~~~
+/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:47: warning: unused parameter 'size' [-Wunused-parameter]
+   14 | void qsort_r(void *base, size_t nmemb, size_t size, void *thunk, int (*compar)(void *, const void *, const void *)) {
+      |                                        ~~~~~~~^~~~
+/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:59: warning: unused parameter 'thunk' [-Wunused-parameter]
+   14 | void qsort_r(void *base, size_t nmemb, size_t size, void *thunk, int (*compar)(void *, const void *, const void *)) {
+      |                                                     ~~~~~~^~~~~
+/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:72: warning: unused parameter 'compar' [-Wunused-parameter]
+   14 | void qsort_r(void *base, size_t nmemb, size_t size, void *thunk, int (*compar)(void *, const void *, const void *)) {
+      |                                                                  ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c: At top level:
+cc1: note: unrecognized command-line option '-Wno-documentation-deprecated-sync' may have been intended to silence earlier diagnostics
+ninja: build stopped: subcommand failed.
+
+
+
+#include <stdlib.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef qsort_r
+  cmakeRequireSymbol(0, &qsort_r);
+#endif
+}
+
+void qsort_r(void *base, size_t nmemb, size_t size, void *thunk, int (*compar)(void *, const void *, const void *)) {
+  return ;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+
+Determining if the function qsort_s exists failed with the following output:
+Change Dir: /home/martin/GITProjekte/Gittyup/dep/build-libgit2-Desktop-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_8184d && [1/2] Building C object CMakeFiles/cmTC_8184d.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_8184d
+FAILED: cmTC_8184d 
+: && /usr/bin/gcc -D_GNU_SOURCE  -Wall -Wextra -Wno-documentation-deprecated-sync -Wno-missing-field-initializers -Wmissing-declarations -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wint-conversion -Wc99-c11-compat -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=qsort_s  CMakeFiles/cmTC_8184d.dir/CheckFunctionExists.c.o -o cmTC_8184d   && :
+/usr/bin/ld: CMakeFiles/cmTC_8184d.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `qsort_s'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
