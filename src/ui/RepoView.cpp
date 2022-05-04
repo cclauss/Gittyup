@@ -1845,6 +1845,8 @@ void RepoView::amendCommit() {
   if (!head.isValid())
     return;
 
+  qDebug() << __FILE__ << ":" << __LINE__ << " RepoView::amendCommit 0.5";
+
   git::Commit commit = head.target();
   if (!commit.isValid())
     return;
