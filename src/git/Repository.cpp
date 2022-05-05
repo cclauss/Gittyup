@@ -200,7 +200,7 @@ Signature Repository::defaultSignature(bool *fake, const QString &overrideUser,
   if (!git_signature_default(&signature, d->repo)) {
 	  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::defaultSignature valid";
     Signature res(signature, true);
-
+	qDebug() << __FILE__ << ":" << __LINE__ << " Repository::defaultSignature res" << res << " isvalid(): " << res.isValid();
     if (res.isValid() &&
         (!overrideUser.isEmpty() || !overrideEmail.isEmpty())) {
       if (overrideUser.isEmpty())
@@ -213,12 +213,14 @@ Signature Repository::defaultSignature(bool *fake, const QString &overrideUser,
       else
         email = overrideEmail;
 
+	  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::defaultSignature create new signature";
+
       git_signature_new(&signature, name.toUtf8(), email.toUtf8(),
                         res.gitDate().time, res.gitDate().offset);
 
       res = Signature(signature, true);
     }
-	qDebug() << __FILE__ << ":" << __LINE__ << " Repository::defaultSignature: res: " << res;
+	qDebug() << __FILE__ << ":" << __LINE__ << " Repository::defaultSignature: res: " << res << "valid: " << res.isValid();
     return res;
   }else {
 	  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::defaultSignature invalid";
@@ -250,7 +252,7 @@ Signature Repository::defaultSignature(bool *fake, const QString &overrideUser,
 
     return Signature(signature, true);
   }
-
+qDebug() << __FILE__ << ":" << __LINE__ << " Repository::defaultSignature: something wrong" ;
   return Signature();
 }
 
