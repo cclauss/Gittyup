@@ -286,6 +286,7 @@ void Index::setStaged(const QStringList &files, bool staged, bool yieldFocus) {
     git_index_write(d->index);
     foreach (const QString &changedFile, changedFiles)
       d->stagedCache.remove(changedFile);
+	qDebug() << __FILE__ << ":" << __LINE__ << "Index::setStaged: index changed";
     emit notifier->indexChanged(changedFiles, yieldFocus);
   }
 

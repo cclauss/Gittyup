@@ -249,7 +249,10 @@ DoubleTreeWidget::DoubleTreeWidget(const git::Repository &repo, QWidget *parent)
           &DoubleTreeWidget::toggleCollapseUnstagedFiles);
 
   connect(repo.notifier(), &git::RepositoryNotifier::indexChanged, this,
-          [this](const QStringList &paths) { mDiffTreeModel->refresh(paths); });
+
+		  [this](const QStringList &paths) {
+	  qDebug() << __FILE__ << ":" << __LINE__ << "DoubleTreeWidget. mDiffTreeModel->refresh(paths);";
+	  mDiffTreeModel->refresh(paths); });
 
   RepoView *view = RepoView::parentView(this);
   connect(mEditor, &BlameEditor::linkActivated, view, &RepoView::visitLink);
