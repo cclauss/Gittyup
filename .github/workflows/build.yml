@@ -164,9 +164,9 @@ jobs:
             pack: 1
 
     steps:
-      - name: check GIT
+      # otherwise the testcases will fail
+      - name: Set git name and email
         run: |
-          git config --list
           git config --global user.name "Your Name"
           git config --global user.email "youremail@yourdomain.com"
           git config --list
