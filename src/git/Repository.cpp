@@ -551,17 +551,26 @@ Commit Repository::commit(const QString &message,
   Signature signature =
       defaultSignature(fakeSignature, overrideUser, overrideEmail);
 
+  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::commit";
+
+
   if (!signature.isValid())
     return Commit();
+
+  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::commit 2";
 
   // Write the index tree.
   Index idx = index();
   if (!idx.isValid())
     return Commit();
 
+  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::commit 3";
+
   Tree tree = idx.writeTree();
   if (!tree.isValid())
     return Commit();
+
+  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::commit 4";
 
   // Lookup the parent commit.
   QVector<const git_commit *> parents;
@@ -577,8 +586,11 @@ Commit Repository::commit(const QString &message,
   // Create the commit.
   git_oid id;
   if (git_commit_create(&id, d->repo, "HEAD", signature, signature, 0,
-                        message.toUtf8(), tree, parents.size(), parents.data()))
+						message.toUtf8(), tree, parents.size(), parents.data())) {
+	  qDebug() << __FILE__ << ":" << __LINE__ << " Creating head failed";
     return Commit();
+  }
+  qDebug() << __FILE__ << ":" << __LINE__ << " Creating head success";
 
   // Cleanup merge state.
   switch (state()) {
