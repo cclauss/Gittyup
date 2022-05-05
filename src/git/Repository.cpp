@@ -189,6 +189,8 @@ bool Repository::isBare() const { return git_repository_is_bare(d->repo); }
 
 Signature Repository::defaultSignature(bool *fake, const QString &overrideUser,
                                        const QString &overrideEmail) const {
+
+	qDebug() << __FILE__ << ":" << __LINE__ << " Repository::defaultSignature: fake:" << fake << "OverrideUser: " << overrideUser << " OVerrideEmail: " << overrideEmail;
   QString name, email;
 
   if (fake)
@@ -196,6 +198,7 @@ Signature Repository::defaultSignature(bool *fake, const QString &overrideUser,
 
   git_signature *signature = nullptr;
   if (!git_signature_default(&signature, d->repo)) {
+	  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::defaultSignature valid";
     Signature res(signature, true);
 
     if (res.isValid() &&
@@ -215,8 +218,10 @@ Signature Repository::defaultSignature(bool *fake, const QString &overrideUser,
 
       res = Signature(signature, true);
     }
-
+	qDebug() << __FILE__ << ":" << __LINE__ << " Repository::defaultSignature: res: " << res;
     return res;
+  }else {
+	  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::defaultSignature invalid";
   }
 
 #ifdef Q_OS_UNIX

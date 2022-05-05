@@ -921,8 +921,12 @@ public:
 	}
 	qDebug() << __FILE__ << ":" << __LINE__ << " DetailView::commit 2";
 
-    if (view->commit(mMessage->toPlainText(), upstream))
+	if (view->commit(mMessage->toPlainText(), upstream)) {
+		qDebug() << __FILE__ << ":" << __LINE__ << " DetailView::commit commit success";
       mMessage->clear(); // Clear the message field.
+	} else {
+		qDebug() << __FILE__ << ":" << __LINE__ << " DetailView::commit commit failed";
+	}
   }
 
   bool isCommitEnabled() const { return mCommit->isEnabled(); }
