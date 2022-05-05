@@ -65,6 +65,8 @@ private:
 
 DoubleTreeWidget::DoubleTreeWidget(const git::Repository &repo, QWidget *parent)
     : ContentWidget(parent) {
+
+	qDebug() << __FILE__ << ":" << __LINE__ << "DoubleTreeWidget::DoubleTreeWidget Create doubleTreeWidget";
   // first column
   // top (Buttons to switch between Blame editor and DiffView)
   SegmentedButton *segmentedButton = new SegmentedButton(this);
