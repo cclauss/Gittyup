@@ -91,7 +91,10 @@ public:
     connect(&mStatus, &QFutureWatcher<git::Diff>::finished, [this] {
       mTimer.stop();
       resetWalker();
-	  qDebug() << __FILE__ << ":" << __LINE__ << " mStatus::finished. mRows.isEmpty: " << mRows.isEmpty() << " mRows.first().commit.isValid():" << mRows.first().commit.isValid();
+	  if (mRows.isEmpty())
+		qDebug() << __FILE__ << ":" << __LINE__ << " mStatus::finished. mRows.isEmpty: " << mRows.isEmpty();
+	  else
+		qDebug() << __FILE__ << ":" << __LINE__ << " mStatus::finished. mRows.isEmpty: " << mRows.isEmpty() << " mRows.first().commit.isValid():" << mRows.first().commit.isValid();
       emit statusFinished(!mRows.isEmpty() && !mRows.first().commit.isValid());
     });
 
