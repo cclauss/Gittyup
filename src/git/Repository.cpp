@@ -197,6 +197,7 @@ Signature Repository::defaultSignature(bool *fake, const QString &overrideUser,
     *fake = false;
 
   git_signature *signature = nullptr;
+  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::defaultSignature: Repo Valid: " << isValid();
   if (!git_signature_default(&signature, d->repo)) {
 	  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::defaultSignature valid";
     Signature res(signature, true);
@@ -247,6 +248,7 @@ Signature Repository::defaultSignature(bool *fake, const QString &overrideUser,
     email = overrideEmail;
 
   if (!git_signature_now(&signature, name.toUtf8(), email.toUtf8())) {
+	  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::defaultSignature: success signature now" ;
     if (fake)
       *fake = true;
 
