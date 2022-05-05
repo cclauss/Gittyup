@@ -23,6 +23,7 @@
 #include <QDateTime>
 #include <QDir>
 #include <QFileInfo>
+#include <QDebug>
 
 namespace git {
 
@@ -135,7 +136,8 @@ Index::StagedState Index::isStaged(const QString &path) const {
 }
 
 void Index::setStaged(const QStringList &files, bool staged, bool yieldFocus) {
-  bool dirAdded = false;
+  qDebug() << __FILE__ << ":" << __LINE__ << "Index::setStaged";
+	bool dirAdded = false;
   QStringList changedFiles;
   Repository repo(git_index_owner(d->index));
   RepositoryNotifier *notifier = repo.notifier();
@@ -153,6 +155,8 @@ void Index::setStaged(const QStringList &files, bool staged, bool yieldFocus) {
       fileId = headId(file, &fileMode);
       fileExists = !fileId.isNull();
     }
+
+	qDebug() << __FILE__ << ":" << __LINE__ << "Index::setStaged: fileExists: " << fileExists << " Staged: " << staged;
 
     // submodule
     if (Submodule submodule = repo.lookupSubmodule(file)) {
@@ -200,6 +204,7 @@ void Index::setStaged(const QStringList &files, bool staged, bool yieldFocus) {
       continue;
     }
 
+
     // regular file
     if (staged) {
       if (fileExists) {
@@ -232,10 +237,14 @@ void Index::setStaged(const QStringList &files, bool staged, bool yieldFocus) {
           if (!allow)
             continue;
 
+		  qDebug() << __FILE__ << ":" << __LINE__ << "Index::setStaged: git_index_add_bypath";
           if (git_index_add_bypath(d->index, path)) {
+			qDebug() << __FILE__ << ":" << __LINE__ << "Index::setStaged: git_index_add_bypath failed";
             emit notifier->indexStageError(file);
             continue;
-          }
+		  } else {
+			qDebug() << __FILE__ << ":" << __LINE__ << "Index::setStaged: git_index_add_bypath success";
+		  }
         }
 
       } else {
@@ -268,10 +277,11 @@ void Index::setStaged(const QStringList &files, bool staged, bool yieldFocus) {
         }
       }
     }
-
     changedFiles.append(file);
+	qDebug() << __FILE__ << ":" << __LINE__ << "Index::setStaged: changedFiles: " << changedFiles;
   }
 
+  qDebug() << __FILE__ << ":" << __LINE__ << "Index::setStaged: changedFiles empty: " << changedFiles.isEmpty();
   if (!changedFiles.isEmpty()) {
     git_index_write(d->index);
     foreach (const QString &changedFile, changedFiles)

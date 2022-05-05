@@ -199,6 +199,7 @@ void Diff::sort(SortRole role, Qt::SortOrder order) {
 }
 
 void Diff::setAllStaged(bool staged, bool yieldFocus) {
+	qDebug() << __FILE__ << ":" << __LINE__ << " Diff::setAllStaged";
   QStringList paths;
   for (int i = 0; i < count(); ++i)
     paths.append(name(i));
