@@ -185,6 +185,7 @@ public:
     // Reset state.
     mParents.clear();
     mRows.clear();
+	qDebug() << __FILE__ << ":" << __LINE__ << " CommitModel::resetWalker(). mRows.clear()";
 
     // Update status row.
     bool head = (!mRef.isValid() || mRef.isHead());
@@ -197,7 +198,10 @@ public:
       }
 
       mRows.append(Row(git::Commit(), row));
+	  qDebug() << __FILE__ << ":" << __LINE__ << " CommitModel::resetWalker(). appendRow";
     }
+	
+	qDebug() << __FILE__ << ":" << __LINE__ << " CommitModel::resetWalker(). finished adding rows";
 
     // Begin walking commits.
     if (mRef.isValid()) {
@@ -308,9 +312,12 @@ public:
       int first = mRows.size();
       int last = first + rows.size() - 1;
       beginInsertRows(QModelIndex(), first, last);
+	  
       mRows.append(rows);
+	  qDebug() << __FILE__ << ":" << __LINE__ << " CommitModel::fetchMore(). appendRow";
       endInsertRows();
     }
+	qDebug() << __FILE__ << ":" << __LINE__ << " CommitModel::fetchMore(). finished appending rows";
 
     // Invalidate walker.
     if (!commit.isValid())
