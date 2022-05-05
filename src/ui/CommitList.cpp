@@ -91,7 +91,7 @@ public:
     connect(&mStatus, &QFutureWatcher<git::Diff>::finished, [this] {
       mTimer.stop();
       resetWalker();
-	  qDebug() << __FILE__ << ":" << __LINE__ << " mStatus::finished";
+	  qDebug() << __FILE__ << ":" << __LINE__ << " mStatus::finished. mRows.isEmpty: " << mRows.isEmpty() << " mRows.first().commit.isValid():" << mRows.first().commit.isValid();
       emit statusFinished(!mRows.isEmpty() && !mRows.first().commit.isValid());
     });
 
@@ -1117,7 +1117,7 @@ CommitList::CommitList(Index *index, QWidget *parent)
       selectFirstCommit();
 
     // Notify main window.
-	qDebug() << __FILE__ << ":" << __LINE__ << " CommitModel::statusFinished 3";
+	qDebug() << __FILE__ << ":" << __LINE__ << " CommitModel::statusFinished 3. Visible: " << visible;
     emit statusChanged(visible);
   });
 
