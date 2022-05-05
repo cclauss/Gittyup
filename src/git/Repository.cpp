@@ -333,6 +333,7 @@ Diff Repository::diffIndexToWorkdir(const Index &index,
 Reference Repository::head() const {
   git_reference *ref = nullptr;
   git_repository_head(&ref, d->repo);
+  qDebug() << __FILE__ << ":" << __LINE__ << " Repository::head: ref: " << ref;
   return Reference(ref);
 }
 

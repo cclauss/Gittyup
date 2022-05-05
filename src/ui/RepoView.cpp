@@ -1842,6 +1842,7 @@ void RepoView::amendCommit() {
   // FIXME: Log errors.
   qDebug() << __FILE__ << ":" << __LINE__ << " RepoView::amendCommit 0";
   git::Branch head = mRepo.head();
+  qDebug() << __FILE__ << ":" << __LINE__ << " RepoView::amendCommit head is valid:" << head.isValid();
   if (!head.isValid())
     return;
 
