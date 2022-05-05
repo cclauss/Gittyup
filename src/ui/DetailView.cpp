@@ -912,10 +912,14 @@ public:
 
   void commit() {
     // Check for a merge head.
+	  qDebug() << __FILE__ << ":" << __LINE__ << " DetailView::commit";
     git::AnnotatedCommit upstream;
     RepoView *view = RepoView::parentView(this);
-    if (git::Reference mergeHead = view->repo().lookupRef("MERGE_HEAD"))
+	if (git::Reference mergeHead = view->repo().lookupRef("MERGE_HEAD")) {
       upstream = mergeHead.annotatedCommit();
+	  qDebug() << __FILE__ << ":" << __LINE__ << " DetailView::commit 1";
+	}
+	qDebug() << __FILE__ << ":" << __LINE__ << " DetailView::commit 2";
 
     if (view->commit(mMessage->toPlainText(), upstream))
       mMessage->clear(); // Clear the message field.

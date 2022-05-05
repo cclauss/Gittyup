@@ -1774,6 +1774,7 @@ bool RepoView::commit(const QString &message,
                       bool force) {
   // Check for detached head.
   git::Reference head = mRepo.head();
+  qDebug() << __FILE__ << ":" << __LINE__ << " RepoView::commit. head valid: " << head.isValid() << "Force: " << force;
   if (!force && head.isValid() && !head.isLocalBranch()) {
     QString title = tr("Commit?");
     QString text = tr("Are you sure you want to commit on a detached HEAD?");
