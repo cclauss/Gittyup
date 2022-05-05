@@ -70,7 +70,8 @@ void TestInitRepo::initTestCase() {
     auto timeout = Timeout(1000, "Start dialog didn't close in time");
 
     // Show popup menu.
-    mouseClick(plus, Qt::LeftButton);
+	//mouseClick(plus, Qt::LeftButton);
+	plus->click();
   }
 
   CloneDialog *cloneDialog =
@@ -128,7 +129,8 @@ void TestInitRepo::commitFile() {
   QPushButton *stageAll = detailView->findChild<QPushButton *>("StageAll");
   QVERIFY(stageAll);
 
-  mouseClick(stageAll, Qt::LeftButton);
+  stageAll->click();
+  // mouseClick(stageAll, Qt::LeftButton);
   view->commit();
 }
 
@@ -188,7 +190,8 @@ void TestInitRepo::editFile() {
 
   {
     auto timeout = Timeout(1000, "Popup didn't close in time");
-    mouseClick(edit, Qt::LeftButton);
+	//mouseClick(edit, Qt::LeftButton);
+	edit->click();
   }
 }
 
