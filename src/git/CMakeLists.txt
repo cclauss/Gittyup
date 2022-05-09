@@ -26,12 +26,10 @@ add_library(
   Tag.cpp
   TagRef.cpp
   Tree.cpp)
-message(FATAL_ERROR ${LIBGIT2_SYSTEM_LIBS})
 target_link_libraries(git
-	#${LIBGIT2_DEPENDENCY_OBJECTS}
-  libgit2
+  #${LIBGIT2_DEPENDENCY_OBJECTS}
   #${LIBGIT2_SYSTEM_LIBS}
-  #libgit2package
+  libgit2
   Qt5::Core
   Qt5::Network
 )
